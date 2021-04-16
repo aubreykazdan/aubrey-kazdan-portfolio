@@ -1,0 +1,31 @@
+// font-family: 'Lexend', sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    @include fontStyles(2rem, 20px);
+}
+
+h1 {
+    @include fontStyles(5rem, 20px);
+    text-align: center;
+    padding: 40%;
+}
+
+header {
+    background-image: url(/assets/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    border: 10px solid black;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
