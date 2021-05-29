@@ -1,4 +1,4 @@
-@mixin fontStyles($font-size, $line-height, $font-color: #000000) {
+@mixin fontStyles($font-size, $line-height, $font-color: #ffffff) {
     font-size: $font-size;
     line-height: $line-height;
     color: $font-color;
