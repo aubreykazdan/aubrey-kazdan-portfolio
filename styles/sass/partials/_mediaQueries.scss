@@ -1,8 +1,14 @@
-@media (max-width: 900px) {
+// @media (max-width: 500px) {
+//   .homeContent {
+//     height: auto;
+//   }
+// }
+
+@media (max-width: 915px) {
   .homeDivider {
     height: auto;
     flex-wrap: wrap;
-    flex-direction: column;
+    // flex-direction: column;
   }
   .homeImage {
     width: 100%;
@@ -11,14 +17,69 @@
 
   .homePadding {
     padding: 0.5rem 2rem;
+    margin: 0;
   }
 
-  .homeContent {
+  .homeContent,
+  .proOneContent {
+    width: 100%;
+    height: auto;
+  }
+
+  // --------- STYLINGS FOR PROJECT 1 ---------
+  .sectionDivider {
+    background-color: $grey;
+    height: 10vh;
+  }
+
+  .proOneDivider {
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .proOneImages {
     width: 100%;
     height: 80vh;
   }
-
-  .homePadding {
+  
+  .proOnePadding {
+    padding: 0.5rem 2rem;
     margin: 0;
   }
 }
+
+// @media (max-width: 1200px) {
+//   // --------- STYLINGS FOR PROJECT 1 ---------
+//   .desktop{
+//     width: 500px;
+//     height: calc(500px / 1.6);
+//   }
+  
+//   .iPhone {
+//     width: 125px;
+//     height: calc(125px * 1.9);
+//   }
+  
+//   .iPad {
+//     width: 300px;
+//     height: calc(300px * 1.3);
+//   }
+// }
+
+// @media (max-width: 1040px) {
+//   .desktop{
+//     width: 430px;
+//     height: calc(430px / 1.6);
+//   }
+  
+//   .iPhone {
+//     width: 100px;
+//     height: calc(100px * 1.9);
+//   }
+  
+//   .iPad {
+//     width: 275px;
+//     height: calc(275px * 1.3);
+//   }
+// }
