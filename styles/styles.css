@@ -287,6 +287,13 @@ a:hover {
   color: #f7f7f7;
 }
 
+.wrapper {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid yellow;
+}
+
 .homeDivider {
   width: 100vw;
   height: 100vh;
@@ -294,7 +301,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
 }
-.homeDivider .homeImage {
+
+.homeImage {
   width: 50%;
   height: 100vh;
   background-image: url(../../../assets/portraitshot-cropped.png);
@@ -304,7 +312,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
 }
-.homeDivider .homeContent {
+
+.homeContent {
   width: 50%;
   height: 100vh;
   display: -webkit-box;
@@ -336,4 +345,30 @@ a:hover {
 .socialIcons ul li {
   display: inline-block;
   margin-right: 1rem;
+}
+
+@media (max-width: 900px) {
+  .homeDivider {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .homeImage {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .homeContent {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .homePadding {
+    margin: 0;
+  }
 }

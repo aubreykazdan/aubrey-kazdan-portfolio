@@ -1,32 +1,33 @@
-// .wrapper {
-//   max-width: 1300px;
-//   width: 90%;
-//   margin: 0 auto;
-//   border: 1px solid yellow;
-// }
+.wrapper {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid yellow;
+}
 
 .homeDivider {
   width: 100vw;
   height: 100vh;
   display: flex;
-
-  .homeImage {
-    width: 50%;
-    // max-width: 870px;
-    height: 100vh;
-    background-image: url(../../../assets/portraitshot-cropped.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-  }
-
-  .homeContent {
-    width: 50%;
-    // max-width: 870px;
-    height: 100vh;
-    display: flex;
-  }
 }
+
+.homeImage {
+  width: 50%;
+  // max-width: 870px;
+  height: 100vh;
+  background-image: url(../../../assets/portraitshot-cropped.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.homeContent {
+  width: 50%;
+  // max-width: 870px;
+  height: 100vh;
+  display: flex;
+}
+
 
 .homePadding {
   margin-top: auto;
