@@ -1,0 +1,54 @@
+// .wrapper {
+//   max-width: 1300px;
+//   width: 90%;
+//   margin: 0 auto;
+//   border: 1px solid yellow;
+// }
+
+.homeDivider {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .homeImage {
+    width: 50%;
+    // max-width: 870px;
+    height: 100vh;
+    background-image: url(../../../assets/portraitshot-cropped.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+  }
+
+  .homeContent {
+    width: 50%;
+    // max-width: 870px;
+    height: 100vh;
+    display: flex;
+  }
+}
+
+.homePadding {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 4rem;
+    .intro {
+      padding: 1rem 0;
+    }
+}
+
+.socialIcons {
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+

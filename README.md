@@ -1,2 +1,2 @@
 Font-Family: "Source Sans Pro", Helvetica, sans-serif;
-Color: #f7f7f7;
+Font-color: #f7f7f7;

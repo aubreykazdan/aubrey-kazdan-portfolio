@@ -5,20 +5,36 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    @include fontStyles(2rem, 20px);
+    font-family: $primaryFont;
+    @include fontStyles(2rem, 3.5rem);
     background-image: url(../../../assets/background.jpg)
 }
 
 h1 {
-    @include fontStyles(5rem, 20px);
-    text-align: center;
+    @include fontStyles(7rem, 6rem);
+    font-weight: 400;
 }
 
-.wrapper {
-    max-width: 1300px;
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid yellow;
+.tagline {
+    @include fontStyles(3rem, 3rem, $grey);
+    font-weight: 400;
+}
+
+.bio span {
+    color: $grey;
+}
+
+li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: $grey;
+}
+
+a:hover {
+    color: $white;
 }
 
