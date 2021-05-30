@@ -330,6 +330,10 @@ a:hover {
   padding: 1rem 0;
 }
 
+.socials {
+  padding-bottom: 1rem;
+}
+
 .socialIcons {
   width: 100%;
 }
