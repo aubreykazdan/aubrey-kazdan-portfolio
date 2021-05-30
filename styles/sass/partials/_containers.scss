@@ -5,6 +5,8 @@
   border: 1px solid yellow;
 }
 
+// --------- STYLINGS FOR HOME PAGE ---------
+
 .homeDivider {
   width: 100vw;
   height: 100vh;
@@ -12,13 +14,12 @@
 }
 
 .homeImage {
-  width: 50%;
   // max-width: 870px;
+  width: 50%;
   height: 100vh;
   background-image: url(../../../assets/portraitshot-cropped.png);
   background-position: center;
   background-size: cover;
-  display: flex;
 }
 
 .homeContent {
@@ -56,4 +57,33 @@
 }
 
 
+// --------- STYLINGS FOR PROJECT 1 ---------
 
+.projectOneDivider {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.projectOneImages {
+  width: 50%;
+  height: 100vh;
+  background-color: $grey;
+  background-position: center;
+  background-size: cover;
+  // display: flex;
+}
+
+.projectOnePadding {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 4rem;
+}
+
+.projectOneContent {
+  width: 50%;
+  // max-width: 870px;
+  height: 100vh;
+  display: flex;
+}

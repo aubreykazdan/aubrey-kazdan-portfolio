@@ -256,14 +256,16 @@ body {
   background-image: url(../../../assets/background.jpg);
 }
 
-h1 {
+h1,
+h2 {
   font-size: 7rem;
   line-height: 6rem;
   color: #c5c5c5;
   font-weight: 400;
 }
 
-.tagline {
+.tagline,
+.projectTitles {
   font-size: 3rem;
   line-height: 3rem;
   color: #888888;
@@ -308,9 +310,6 @@ a:hover {
   background-image: url(../../../assets/portraitshot-cropped.png);
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .homeContent {
@@ -351,6 +350,40 @@ a:hover {
   margin-right: 1rem;
 }
 
+.projectOneDivider {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.projectOneImages {
+  width: 50%;
+  height: 100vh;
+  background-color: #888888;
+  background-position: center;
+  background-size: cover;
+}
+
+.projectOnePadding {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 4rem;
+}
+
+.projectOneContent {
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 900px) {
   .homeDivider {
     height: auto;
@@ -367,6 +400,10 @@ a:hover {
     height: 60vh;
   }
 
+  .homePadding {
+    padding: 0.5rem 2rem;
+  }
+
   .homeContent {
     width: 100%;
     height: 80vh;
@@ -374,5 +411,53 @@ a:hover {
 
   .homePadding {
     margin: 0;
+  }
+}
+.fadeIn {
+  animation: fadeIn 2500ms ease 1;
+  -webkit-animation: fadeIn 2500ms ease 1;
+  -moz-animation: fadeIn 2500ms ease 1;
+  -o-animation: fadeIn 2500ms ease 1;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInLong {
+  animation: fadeIn 5000ms ease 1;
+  -webkit-animation: fadeIn 5000ms ease 1;
+  -moz-animation: fadeIn 5000ms ease 1;
+  -o-animation: fadeIn 5000ms ease 1;
+}
+
+@-webkit-keyframes fadeInLong {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLong {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
