@@ -1,0 +1,76 @@
+button {
+  cursor: pointer
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navList {
+  position: fixed;
+  top: -6px;
+  right: 0;
+  left: -90px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.1s;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    line-height: 50px;
+    padding: 1rem;
+    color: $white;
+    background: $black;
+  }
+}
+
+.navbarToggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  margin-right: 1.5rem;
+  background-image: none;
+  background: transparent;
+  border: none;
+  z-index: 100;
+}
+
+.navbarToggle .fas {
+  font-size: 4rem;
+  color: $white;
+}
+
+.navbarToggle .fas:focus,
+.navbarToggle .fas:hover {
+  color: red;
+}
+
+// This unhides the navbar when ham button is clicked
+.showMenu {
+  transform: translateY(0);
+}
+
+
+
+
+// @media(min-width:767px) {
+//   .navbar {
+//     padding: 0px 0;
+//     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+//     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+//     transition: background .5s ease-in-out,padding .5s ease-in-out;
+//   }
+
+//   .top-nav-collapse {
+//     padding: 0;
+//   }
+// }
+
+// @media(max-width: 1250px) {
+//   .navbar-default .navbar-nav>li>a {
+//       letter-spacing: 1px;
+//   }
+// }

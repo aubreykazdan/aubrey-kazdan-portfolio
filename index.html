@@ -11,9 +11,35 @@
     <title>Aubrey Kazdan</title>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navButtonContainer" >
+      <button type="button" class="navbarToggle">
+        <span class="srOnly">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="navContainer">
+      <ul class="navList navMenu">
+        <li>
+          <a class="menuLink" href="#home">HOME</a>
+        </li>
+        <li>
+          <a class="menuLink" href="#skills">SKILLS</a>
+        </li>
+        <li>
+          <a class="menuLink" href="#projects">PROJECTS</a>
+        </li>
+        <li>
+          <a class="menuLink" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
-    <div class="homeDivider">
-        <div class="homeImage fadeInLong"></div>
+    <div class="homeDivider" id="home">
+      <div class="homeImage fadeInLong"></div>
         <div class=homeContent>
           <div class="homePadding fadeIn">
 
@@ -23,7 +49,6 @@
             </div>
 
             <div class="bio">
-              </span>
               <p>An adaptive <span>communicator</span> and <span>leader</span> with a focus on functional web design that is friendly to all users. When I am not coding, I am listening to records on vinyl, replaying the Dark Souls games, or enjoying a good movie.</p>
               <p>I'm always documenting my learning experiences with code and life. Get to know me by following any of the links below:</p>
             </div>
@@ -43,14 +68,14 @@
                   <li>
                     <a href="https://www.instagram.com/aubreykazdan/"><i class="fab fa-instagram"></i></a>
                   </li>
-                </ul>
-              </div>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </div>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Skills</h2>
       <div class="skillsTop">
         <ul>
@@ -73,7 +98,7 @@
       </div>
     </section>
 
-    <section class="proOne">
+    <section class="proOne" id="projects">
       <div class="proOneDivider">
 
         <div class="proOneImages">
@@ -111,6 +136,11 @@
         </div>
       </div>
     </section>
+
+    <section class="contact" id="contact">
+
+    </section>
   </main>
+<script src="./script.js"></script>
 </body>
 </html>
