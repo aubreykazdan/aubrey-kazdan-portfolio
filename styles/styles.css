@@ -574,30 +574,11 @@ button {
 .navbar {
   min-height: 75px;
   margin-bottom: 25px;
-}
-
-.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar-default {
   background-color: transparent;
   border-bottom: 1px solid #fff;
 }
 
-.navbar-toggle .fas {
-  font-size: 4rem;
-  color: #888888;
-}
-
-.navbar-toggle .fas:focus,
-.navbar-toggle .fas:hover {
-  color: #f7f7f7;
-}
-
-.navbar-toggle {
+.navList {
   position: fixed;
   top: 0;
   right: 0;
@@ -609,15 +590,39 @@ button {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  padding-top: 4rem;
 }
 
-.showNav {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.navbar-nav a {
+.navMenu a {
   line-height: 50px;
   padding: 1rem;
+}
+
+.navbarToggle {
+  position: relative;
+  float: right;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  margin-right: 1.5rem;
+  background-image: none;
+  z-index: 100;
+}
+
+.navbarToggle .fas {
+  font-size: 4rem;
+  color: #888888;
+}
+.navbarToggle .fas .navbarToggle .fas:focus,
+.navbarToggle .fas .navbarToggle .fas:hover {
+  color: #f7f7f7;
+}
+
+.showMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }

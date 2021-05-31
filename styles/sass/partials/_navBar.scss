@@ -12,30 +12,11 @@ button {
 .navbar {
     min-height: 75px;
     margin-bottom: 25px;
-}
-
-.navbar-nav {
-  display: flex;
-}
-
-.navbar-default {
     background-color: transparent;
     border-bottom: 1px solid #fff;
 }
 
-
-.navbar-toggle .fas {
-  font-size: 4rem;
-  color: $grey;
-}
-
-.navbar-toggle .fas:focus,
-.navbar-toggle .fas:hover {
-  color: $white;
-}
-
-
-.navbar-toggle {
+.navList {
   position: fixed;
   top: 0;
   right: 0;
@@ -43,29 +24,42 @@ button {
   height: 100%;
   transform: translateY(-100%);
   transition: transform 0.2s;
-  padding-top: 4rem;
-  // position: relative;
-  // float: right;
-  // padding: 1rem;
-  // margin-top: 0.8rem;
-  // margin-right: 1.5rem;
-  // background-image: none;
 }
 
-.showNav {
+.navMenu {
+  display: flex;
+}
+
+.navMenu a{
+  line-height: 50px;
+  padding: 1rem;
+}
+
+.navbarToggle {
+  position: relative;
+  float: right;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  margin-right: 1.5rem;
+  background-image: none;
+  z-index: 100;
+}
+
+.navbarToggle .fas {
+  font-size: 4rem;
+  color: $grey;
+  .navbarToggle .fas:focus,
+  .navbarToggle .fas:hover {
+    color: $white;
+  }
+}
+
+// This unhides the navbar when ham button is clicked
+.showMenu {
   transform: translateY(0);
 }
 
 
-// .navbar-default {
-//     background-color: $black;
-//     height: 74px;
-// }
-
-.navbar-nav a{
-    line-height: 50px;
-    padding: 1rem;
-}
 
 
 // @media(min-width:767px) {
