@@ -2,56 +2,50 @@ button {
   cursor: pointer
 }
 
-// .navbar-default .navbar-toggle {
-//     // background-image: url(../../../assets/menu-icon.png);
-//     margin-top: 28px;
-//     border-color: transparent;
-//     background-color: transparent;
-// }
-
 .navbar {
-    min-height: 75px;
-    margin-bottom: 25px;
     background-color: transparent;
-    border-bottom: 1px solid #fff;
 }
 
 .navList {
   position: fixed;
-  top: 0;
+  top: -6px;
   right: 0;
+  left: -90px;
   width: 100%;
   height: 100%;
   transform: translateY(-100%);
-  transition: transform 0.2s;
-}
-
-.navMenu {
+  transition: transform 0.1s;
   display: flex;
-}
-
-.navMenu a{
-  line-height: 50px;
-  padding: 1rem;
+  justify-content: flex-end;
+  a {
+    line-height: 50px;
+    padding: 1rem;
+    color: $white;
+    background: $black;
+  }
 }
 
 .navbarToggle {
-  position: relative;
-  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
   padding: 1rem;
   margin-top: 0.8rem;
   margin-right: 1.5rem;
   background-image: none;
+  background: transparent;
+  border: none;
   z-index: 100;
 }
 
 .navbarToggle .fas {
   font-size: 4rem;
-  color: $grey;
-  .navbarToggle .fas:focus,
-  .navbarToggle .fas:hover {
-    color: $white;
-  }
+  color: $white;
+}
+
+.navbarToggle .fas:focus,
+.navbarToggle .fas:hover {
+  color: red;
 }
 
 // This unhides the navbar when ham button is clicked

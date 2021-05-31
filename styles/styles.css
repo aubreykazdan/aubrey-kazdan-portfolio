@@ -572,54 +572,57 @@ button {
 }
 
 .navbar {
-  min-height: 75px;
-  margin-bottom: 25px;
   background-color: transparent;
-  border-bottom: 1px solid #fff;
 }
 
 .navList {
   position: fixed;
-  top: 0;
+  top: -6px;
   right: 0;
+  left: -90px;
   width: 100%;
   height: 100%;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-}
-
-.navMenu {
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-
-.navMenu a {
+.navList a {
   line-height: 50px;
   padding: 1rem;
+  color: #f7f7f7;
+  background: #2C2C2C;
 }
 
 .navbarToggle {
-  position: relative;
-  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
   padding: 1rem;
   margin-top: 0.8rem;
   margin-right: 1.5rem;
   background-image: none;
+  background: transparent;
+  border: none;
   z-index: 100;
 }
 
 .navbarToggle .fas {
   font-size: 4rem;
-  color: #888888;
-}
-.navbarToggle .fas .navbarToggle .fas:focus,
-.navbarToggle .fas .navbarToggle .fas:hover {
   color: #f7f7f7;
+}
+
+.navbarToggle .fas:focus,
+.navbarToggle .fas:hover {
+  color: red;
 }
 
 .showMenu {
