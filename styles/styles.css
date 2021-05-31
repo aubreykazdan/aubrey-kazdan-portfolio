@@ -230,7 +230,7 @@ template {
   overflow: hidden;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -291,7 +291,7 @@ a:hover {
 
 .homeDivider {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +299,7 @@ a:hover {
 
 .homeImage {
   width: 50%;
-  height: 100vh;
+  height: 70vh;
   background-image: url(../../../assets/portraitshotgrey.jpg);
   background-position: center;
   background-size: cover;
@@ -307,7 +307,7 @@ a:hover {
 
 .homeContent {
   width: 50%;
-  height: 100vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,4 +566,58 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  min-height: 75px;
+  margin-bottom: 25px;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-toggle .fas {
+  font-size: 4rem;
+  color: #888888;
+}
+
+.navbar-toggle .fas:focus,
+.navbar-toggle .fas:hover {
+  color: #f7f7f7;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  padding-top: 4rem;
+}
+
+.showNav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.navbar-nav a {
+  line-height: 50px;
+  padding: 1rem;
 }

@@ -11,8 +11,37 @@
     <title>Aubrey Kazdan</title>
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+      <div class="navbar-header page-scroll" >
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="srOnly">Toggle navigation</span>
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right nav nav-pills">
+        <li class="active">
+          <a class="page-scroll" href="#home">HOME</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#skills">SKILLS</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#projects">PROJECTS</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <main>
-    <div class="homeDivider">
+    <div class="homeDivider" id="home">
         <div class="homeImage fadeInLong"></div>
         <div class=homeContent>
           <div class="homePadding fadeIn">
@@ -50,7 +79,7 @@
         </div>
     </div>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Skills</h2>
       <div class="skillsTop">
         <ul>
@@ -73,7 +102,7 @@
       </div>
     </section>
 
-    <section class="proOne">
+    <section class="proOne" id="projects">
       <div class="proOneDivider">
 
         <div class="proOneImages">
@@ -111,6 +140,11 @@
         </div>
       </div>
     </section>
+
+    <section class="contact" id="contact">
+
+    </section>
   </main>
+<script src="./script.js"></script>
 </body>
 </html>
