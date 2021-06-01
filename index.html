@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/1df462a23f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Aubrey Kazdan</title>
 </head>
@@ -127,7 +128,7 @@
               <h3>Sass</h3>
             </li>
             <li>
-              <i class="fas fa-fire"></i>
+              <i class="fas devicon-firebase-plain"></i>
               <h3>Firebase</h3>
             </li>
           </ul>
@@ -135,48 +136,68 @@
         
       </div>
     </section>
-
-    <section class="proOne" id="projects">
+    <section class="projects">
       <div class="proOneDivider">
+        <div class="projectContent">
+            <div class="homePadding fadeIn">
+
+              <div class="projectIntro">
+                <h2>Projects</h2>
+                <span class="projectTitles">Movies A-to-Z</span>
+              </div>
+
+              <div class="projectDescriptions">
+                <p>Built from April 28th to May 10th.</p>
+                <p>A game where users can compare movies based on IMDb user rating scores.</p>
+                <p>Built by <a href="https://github.com/zachbines">Zach Bines</a> + Myself</p>
+              </div>
+      
+              <div class="projectLinks">
+                <a href="https://github.com/ZAP-2/Movies-A-to-Z">Repo</a>
+                <a href="https://zap-2.github.io/Movies-A-to-Z/">Live</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  
 
         <div class="proOneImages">
-          <div class="desktopContainer">
-            <img class="desktop" src="./assets/one24grey.jpg" alt="">
-          </div>
-          <!-- <div class="mobileContainer">
-            <div class="iPhoneContainer">
-              <img class="iPhone" src="./assets/oneiPhoneGrey.jpg" alt="">
-            </div>
-            <div class="iPadContainer">
-              <img class="iPad" src="./assets/oneiPadGrey.jpg" alt="">
-            </div>
-          </div> -->
+          <a href="#openModal1">
+            <figure class="imagesGallery">
+              <img class="img gallery" src="./assets/one24grey.jpg" alt="" />
+              <figcaption>
+                <h3>Movies A-to-Z</h3>
+                <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+              </figcaption>
+            </figure>
+          </a>
         </div>
 
-        <div class="proOneContent">
-          <div class="proOnePadding fadeIn">
-            <div class="projectsInto">
-              <h2>Projects</h2>
-              <span class="projectTitles">Movies A-to-Z</span>
-            </div>
-
-            <div class="projectDescriptions">
-              <p>Built from April 28th to May 10th.</p>
-              <p>A game where users can compare movies based on IMDb user rating scores.</p>
-              <p>Built by <a href="https://github.com/zachbines">Zach Bines</a> + Myself</p>
-            </div>
-
-            <div class="projectLinks">
-              <a href="https://github.com/ZAP-2/Movies-A-to-Z">Repo</a>
-              <a href="https://zap-2.github.io/Movies-A-to-Z/">Live</a>
-            </div>
+        <div id="openModal1" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <img class="img" src="./assets/one24grey.jpg" alt="" />
           </div>
         </div>
-      </div>
-
-
       
+        <div id="openModal2" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <img class="img" src="images/works/2.jpg" alt="" />
+          </div>
+        </div>
+      
+        <div id="openModal3" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <img class="img" src="images/works/3.jpg" alt="" />
+          </div>
+        </div>
+
+
     </section>
+
 
     <section class="contact" id="contact">
 

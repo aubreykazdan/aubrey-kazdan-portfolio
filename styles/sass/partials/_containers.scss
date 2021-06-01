@@ -115,68 +115,115 @@ ul {
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: row-reverse;
-}
-
-.proOneImages {
-  width: 50%;
-  height: 100vh;
-  background-color: $grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .desktopContainer {
-    display: flex;
-    justify-content: center;
-    // margin-top: 1rem;
+  flex-direction: row;
+  .projectContent {
+    width: 50%;
+    height: 100vh;
   }
-  // .mobileContainer {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: flex-end;
-  // }
-
-}
-
-.desktopContainer {
-  max-width: 580px;
-  max-height: calc(580px / 1.6);
-  .desktop{
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 1rem;
+  .proOneImages {
+    width: 50%;
+    height: 100vh;
+    background-color: $grey;
+    // display: flex;
   }
 }
 
-// .iPhoneContainer {
-//   max-width: 150px;
-//   max-height: calc(150px * 2.16);
-//   .iPhone {
-//     max-width: 100%;
-//     max-height: 100%;
-//     // margin-right: 0.5rem; 
-//   }
-// }
-
-// .iPadContainer {
-//   max-width: 350px;
-//   max-height: calc(350px * 1.3);
-//   .iPad {
-//     max-width: 100%;
-//     max-height: 100%;
-//     margin-left: 0.5rem; 
-//   }
-// }
-
-.proOneContent {
-  width: 50%;
-  height: 100vh;
-  // display: flex;
+.imagesGallery {
+  position:relative;
+  padding: 0;
+  height: 80%;
+  .gallery {
+    width: 100%;
+  }
 }
 
-.proOnePadding {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 4rem;
+figcaption {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  // top: -80rem;
+  opacity: 0;
+  padding: 0.5rem;
+  h3 {
+    position: relative;
+    top: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+  }
+}
+
+figcaption a:hover {
+  opacity: 0.8;
+  top: 0;
+  color: white;
+}
+
+
+.lupa {
+  position: relative;
+  padding-top: 15rem;
+}
+
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255, 0.7);
+  z-index: 99999;
+  opacity:0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog div {
+  width: 1090px;
+  height: 790px;
+  color: #000;
+  position: relative;
+  margin: 7% auto;
+  padding: 5px 20px 13px 20px;
+}
+
+.modalDialog p {
+  color: #000;
+  margin-top: 7px;
+}
+
+.modalDialog img {
+  height: 80%;
+}
+
+.close {
+  color: $white;
+  line-height: 25px;
+  position: absolute;
+  right: 12rem;
+  text-align: center;
+  top: 3rem;
+  width: 24px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 30px;
+  transition: all 1.3s ease-in-out;
+}
+
+
+.close:hover {
+  color: $grey;
+  transform: rotate(360deg);
 }
