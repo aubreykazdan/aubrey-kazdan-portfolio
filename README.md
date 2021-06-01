@@ -5,3 +5,4 @@ $background: #2b2b2b;
 $black: #2C2C2C;
 $white: #f7f7f7;
 $grey: #888888;
+$lighterGrey: #C5C5C5;

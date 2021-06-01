@@ -16,8 +16,17 @@ h2 {
     font-weight: 400;
 }
 
+h2 {
+    color: $white;
+    text-align: center;
+  }
+
 h3 {
     @include fontStyles(2rem, 3.5rem, $white)
+}
+
+.projectHeader {
+    color: $lighterGrey;
 }
 
 .tagline,
