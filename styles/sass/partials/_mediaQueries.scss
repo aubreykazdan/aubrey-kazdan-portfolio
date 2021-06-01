@@ -21,8 +21,16 @@
     height: auto;
   }
 
-  // --------- STYLINGS FOR PROJECT 1 ---------
-  // .proImages {
-  //   flex-direction: column;
-  // }
+  // --------- STYLINGS FOR PROJECTS ---------
+  .proImages {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .navList {
+    flex-direction: column;
+    top: 0;
+  }
 }

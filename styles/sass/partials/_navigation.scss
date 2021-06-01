@@ -8,7 +8,7 @@ button {
 
 .navList {
   position: fixed;
-  top: -20px;
+  top: -25px;
   right: 0;
   left: -90px;
   width: 100%;
@@ -19,7 +19,7 @@ button {
   justify-content: flex-end;
   a {
     line-height: 50px;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     color: $white;
     background: $black;
   }
@@ -43,7 +43,7 @@ button {
 }
 
 .navbarToggle .fas {
-  font-size: 4rem;
+  font-size: 3rem;
   color: $white;
   background: $black;
   padding: 1rem;
