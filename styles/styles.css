@@ -299,6 +299,10 @@ a:hover {
   display: none;
 }
 
+ul {
+  padding: 0;
+}
+
 .homeDivider {
   width: 100vw;
   height: 100vh;
@@ -357,12 +361,11 @@ a:hover {
   background-color: #888888;
   margin: 0;
   color: #f7f7f7;
+  padding: 3rem 0;
 }
 .skills h2 {
   color: #f7f7f7;
   text-align: center;
-  margin: 0;
-  padding-top: 2rem;
 }
 
 .skillsFlexContainer {
@@ -373,27 +376,32 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.skillsTop .fab,
-.skillsBottom .fas,
-.skillsBottom .fab {
+.skillsColumnOne .fab,
+.skillsColumnTwo .fas,
+.skillsColumnTwo .fab {
   font-size: 5rem;
-  margin: 0 2rem;
-  padding: 4rem;
+  border: 2px solid #f7f7f7;
+  height: 100px;
+  width: 100px;
+  padding: 2.2rem;
 }
 
-.skillsTop li,
-.skillsBottom li {
+.fa-cloud {
+  padding: 2.2rem 1rem 1rem 1rem;
+}
+
+.skillsColumnOne li,
+.skillsColumnTwo li {
   margin: 1rem;
   text-align: center;
 }
 
-.skillsTop h3,
-.skillsBottom h3 {
+.skillsColumnOne h3,
+.skillsColumnTwo h3 {
   margin: 0;
 }
 
@@ -435,17 +443,6 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.proOneImages .mobileContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
 
 .desktopContainer {
   max-width: 580px;
@@ -457,31 +454,9 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.iPhoneContainer {
-  max-width: 150px;
-  max-height: calc(150px * 2.16);
-}
-.iPhoneContainer .iPhone {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.iPadContainer {
-  max-width: 350px;
-  max-height: calc(350px * 1.3);
-}
-.iPadContainer .iPad {
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: 0.5rem;
-}
-
 .proOneContent {
   width: 50%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .proOnePadding {
@@ -491,10 +466,6 @@ a:hover {
 }
 
 @media (max-width: 915px) {
-  h3 {
-    font-size: 2rem;
-  }
-
   .homeDivider {
     height: auto;
     -ms-flex-wrap: wrap;
@@ -516,20 +487,6 @@ a:hover {
 .proOneContent {
     width: 100%;
     height: auto;
-  }
-
-  .skillsTop ul,
-.skillsBottom ul {
-    padding: 1rem;
-  }
-
-  .skillsTop .fab,
-.skillsBottom .fas,
-.skillsBottom .fab {
-    font-size: 3rem;
-    border: 2px solid #f7f7f7;
-    margin: 0 1rem;
-    padding: 4rem;
   }
 
   .sectionDivider {

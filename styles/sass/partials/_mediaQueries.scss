@@ -1,14 +1,4 @@
-// @media (min-width: 915px) {
-//   .navbarToggle {
-//     display: none;
-//   }
-// }
-
 @media (max-width: 915px) {
-  h3 {
-    font-size: 2rem;
-  }
-
   .homeDivider {
     height: auto;
     flex-wrap: wrap;
@@ -29,20 +19,6 @@
   .proOneContent {
     width: 100%;
     height: auto;
-  }
-
-  .skillsTop ul,
-  .skillsBottom ul {
-    padding: 1rem;
-  }
-
-  .skillsTop .fab,
-  .skillsBottom .fas,
-  .skillsBottom .fab {
-    font-size: 3rem;
-    border: 2px solid $white;
-    margin: 0 1rem;
-    padding: 4rem;
   }
 
   // --------- STYLINGS FOR PROJECT 1 ---------
