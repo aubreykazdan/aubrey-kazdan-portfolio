@@ -264,10 +264,19 @@ h2 {
   font-weight: 400;
 }
 
+h2 {
+  color: #f7f7f7;
+  text-align: center;
+}
+
 h3 {
   font-size: 2rem;
   line-height: 3.5rem;
   color: #f7f7f7;
+}
+
+.projectHeader {
+  color: #C5C5C5;
 }
 
 .tagline,
@@ -363,10 +372,6 @@ ul {
   color: #f7f7f7;
   padding: 3rem 0;
 }
-.skills h2 {
-  color: #f7f7f7;
-  text-align: center;
-}
 
 .skillsFlexContainer {
   display: -webkit-box;
@@ -387,11 +392,7 @@ ul {
   border: 2px solid #f7f7f7;
   height: 100px;
   width: 100px;
-  padding: 2.2rem;
-}
-
-.fa-cloud {
-  padding: 2.2rem 1rem 1rem 1rem;
+  padding: 2rem;
 }
 
 .skillsColumnOne li,
@@ -405,22 +406,25 @@ ul {
   margin: 0;
 }
 
-.proOneDivider {
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.proImages {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
 }
 
-.proOneImages {
-  width: 50%;
-  height: 100vh;
-  background-color: #888888;
+.imagesGallery {
+  position: relative;
+  padding: 0;
+  margin: 1rem;
+}
+.imagesGallery .gallery {
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,35 +438,113 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
 }
-.proOneImages .desktopContainer {
+figcaption p {
+  position: relative;
+  font-size: 4rem;
+  line-height: 0.7rem;
+  color: white;
+  font-weight: 700;
+}
+figcaption .lupa {
+  position: relative;
+}
+
+figcaption:hover {
+  opacity: 1;
+  top: 0;
+  color: white;
+}
+
+a:hover figcaption {
+  opacity: 0.8;
+  background-color: #867d82;
+  top: 0;
+  color: #fff;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+.modalDialog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(150, 132, 132, 0.7);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
 }
 
-.desktopContainer {
-  max-width: 580px;
-  max-height: calc(580px / 1.6);
-}
-.desktopContainer .desktop {
-  max-width: 100%;
-  max-height: 100%;
-  margin-bottom: 1rem;
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.proOneContent {
-  width: 50%;
-  height: 100vh;
+.modalDialog div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1090px;
+  height: 790px;
+  color: #000;
+  position: relative;
 }
 
-.proOnePadding {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 4rem;
+.modalDialog p {
+  color: #f7f7f7;
+  background-color: #2C2C2C;
+  padding: 1rem;
+}
+
+.modalDialog img {
+  height: 80%;
+}
+
+.close {
+  color: #f7f7f7;
+  line-height: 25px;
+  position: absolute;
+  right: 9rem;
+  text-align: center;
+  top: 12rem;
+  width: 24px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 4rem;
+  -webkit-transition: all 1.3s ease-in-out;
+  transition: all 1.3s ease-in-out;
+}
+
+.close:hover {
+  color: #888888;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media (max-width: 915px) {
@@ -487,31 +569,6 @@ ul {
 .proOneContent {
     width: 100%;
     height: auto;
-  }
-
-  .sectionDivider {
-    background-color: #888888;
-    height: 10vh;
-  }
-
-  .proOneDivider {
-    height: auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .proOneImages {
-    width: 100%;
-    height: 80vh;
-  }
-
-  .proOnePadding {
-    padding: 0.5rem 2rem;
-    margin: 0;
   }
 }
 .fadeIn {

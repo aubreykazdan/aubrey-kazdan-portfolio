@@ -22,24 +22,7 @@
   }
 
   // --------- STYLINGS FOR PROJECT 1 ---------
-  .sectionDivider {
-    background-color: $grey;
-    height: 10vh;
-  }
-
-  .proOneDivider {
-    height: auto;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-  }
-
-  .proOneImages {
-    width: 100%;
-    height: 80vh;
-  }
-  
-  .proOnePadding {
-    padding: 0.5rem 2rem;
-    margin: 0;
-  }
+  // .proImages {
+  //   flex-direction: column;
+  // }
 }
