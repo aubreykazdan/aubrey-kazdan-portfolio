@@ -320,6 +320,12 @@ ul {
   padding: 0;
 }
 
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .homeDivider {
   width: 100vw;
   height: 100vh;
@@ -517,18 +523,15 @@ a:hover figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(790px * 1.77);
-  height: 790px;
-  color: #000;
+  max-width: calc(790px * 1.77);
+  max-height: 790px;
+  color: #2C2C2C;
   position: relative;
+  margin: 0 5rem;
 }
 .modalDialog img {
-  height: 80%;
-}
-.modalDialog p {
-  color: #f7f7f7;
-  background-color: #2C2C2C;
-  padding: 1rem;
+  height: auto;
+  width: 100%;
 }
 
 .modalDialog:target {
@@ -538,14 +541,10 @@ a:hover figcaption {
 
 .close {
   color: #f7f7f7;
-  line-height: 25px;
-  position: absolute;
-  right: 20rem;
-  text-align: center;
-  top: 12rem;
-  width: 24px;
-  text-decoration: none;
-  font-weight: normal;
+  background-color: black;
+  margin-top: 2rem;
+  padding: 2rem;
+  line-height: 2rem;
   font-size: 4rem;
   -webkit-transition: all 1.3s ease-in-out;
   transition: all 1.3s ease-in-out;
