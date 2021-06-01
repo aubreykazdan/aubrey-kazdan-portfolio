@@ -22,7 +22,7 @@ h2 {
   }
 
 h3 {
-    @include fontStyles(2rem, 3.5rem, $white)
+    @include fontStyles(2rem, 3.5rem, $white);
 }
 
 .projectHeader {
