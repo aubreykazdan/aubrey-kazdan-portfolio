@@ -1,5 +1,14 @@
+// @media (min-width: 915px) {
+//   .navbarToggle {
+//     display: none;
+//   }
+// }
 
 @media (max-width: 915px) {
+  h3 {
+    font-size: 2rem;
+  }
+
   .homeDivider {
     height: auto;
     flex-wrap: wrap;
@@ -20,6 +29,20 @@
   .proOneContent {
     width: 100%;
     height: auto;
+  }
+
+  .skillsTop ul,
+  .skillsBottom ul {
+    padding: 1rem;
+  }
+
+  .skillsTop .fab,
+  .skillsBottom .fas,
+  .skillsBottom .fab {
+    font-size: 3rem;
+    border: 2px solid $white;
+    margin: 0 1rem;
+    padding: 4rem;
   }
 
   // --------- STYLINGS FOR PROJECT 1 ---------
@@ -44,38 +67,3 @@
     margin: 0;
   }
 }
-
-// @media (max-width: 1200px) {
-//   // --------- STYLINGS FOR PROJECT 1 ---------
-//   .desktop{
-//     width: 500px;
-//     height: calc(500px / 1.6);
-//   }
-  
-//   .iPhone {
-//     width: 125px;
-//     height: calc(125px * 1.9);
-//   }
-  
-//   .iPad {
-//     width: 300px;
-//     height: calc(300px * 1.3);
-//   }
-// }
-
-// @media (max-width: 1040px) {
-//   .desktop{
-//     width: 430px;
-//     height: calc(430px / 1.6);
-//   }
-  
-//   .iPhone {
-//     width: 100px;
-//     height: calc(100px * 1.9);
-//   }
-  
-//   .iPad {
-//     width: 275px;
-//     height: calc(275px * 1.3);
-//   }
-// }

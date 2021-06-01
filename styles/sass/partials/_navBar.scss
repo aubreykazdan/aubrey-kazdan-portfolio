@@ -8,11 +8,11 @@ button {
 
 .navList {
   position: fixed;
-  top: -6px;
+  top: -20px;
   right: 0;
   left: -90px;
   width: 100%;
-  height: 100%;
+  height: auto;
   transform: translateY(-100%);
   transition: transform 0.1s;
   display: flex;
@@ -25,11 +25,15 @@ button {
   }
 }
 
+.navList a:focus,
+.navList a:hover {
+  color: $grey;
+}
+
 .navbarToggle {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 1rem;
   margin-top: 0.8rem;
   margin-right: 1.5rem;
   background-image: none;
@@ -41,36 +45,16 @@ button {
 .navbarToggle .fas {
   font-size: 4rem;
   color: $white;
+  background: $black;
+  padding: 1rem;
 }
 
 .navbarToggle .fas:focus,
 .navbarToggle .fas:hover {
-  color: red;
+  color: $grey;
 }
 
 // This unhides the navbar when ham button is clicked
 .showMenu {
-  transform: translateY(0);
+  transform: translateY(15px);
 }
-
-
-
-
-// @media(min-width:767px) {
-//   .navbar {
-//     padding: 0px 0;
-//     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-//     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-//     transition: background .5s ease-in-out,padding .5s ease-in-out;
-//   }
-
-//   .top-nav-collapse {
-//     padding: 0;
-//   }
-// }
-
-// @media(max-width: 1250px) {
-//   .navbar-default .navbar-nav>li>a {
-//       letter-spacing: 1px;
-//   }
-// }

@@ -1,73 +1,28 @@
-// --------- GENERAL STYLINGS ---------
 
-// .wrapper {
-//   max-width: 1300px;
-//   width: 90%;
-//   margin: 0 auto;
-//   border: 1px solid yellow;
-// }
-
-// img {
-//   height: 200px;
-//   width: 200px;
-// }
-
-// --------- STYLINGS FOR NAV BAR ---------
-
-// .collapse {
-//   display: none;
-//   visibility: none;
-// }
-
-// .navBarToggle {
-//   padding: 2rem;
-//   // float: right;
-//   // margin-right: 3rem;
-// }
-
-// .navBar {
-//   // border: 1px solid yellow;
-//   background-color: $black;
-//   opacity: 0.7;
-//   min-height: 7.5rem;
-//   margin-bottom: 1rem;
-// }
-
-// .navFixedTop {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-// }
-
-// .navBarRight ul{
-//   display: flex;
-//   padding-right: 2rem;
-//   li {
-//     padding: 0 1rem;
-//   }
-// }
+.hide {
+  display: none;
+}
 
 
 // --------- STYLINGS FOR HOME PAGE ---------
 
 .homeDivider {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   display: flex;
 }
 
 .homeImage {
-  // max-width: 870px;
   width: 50%;
-  height: 70vh;
-  background-image: url(../../../assets/portraitshotgrey.jpg);
+  height: 100%;
+  background-image: url(../../../assets/portraitBig.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .homeContent {
   width: 50%;
-  height: 70vh;
+  height: 100%;
   display: flex;
 }
 
@@ -89,11 +44,11 @@
   width: 100%;
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
     li {
       display: inline-block;
-      margin-right: 1rem;
+      margin-right: 5rem;
     }
   }
 }
@@ -110,22 +65,39 @@
   }
 }
 
-.skillsTop ul,
-.skillsBottom ul{
-  margin: 0;
-  padding: 2rem 2rem;
+.skillsFlexContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
+
+// .skillsTop ul,
+// .skillsBottom ul {
+//   margin: 0;
+//   padding: 2rem;
+//   // display: flex;
+//   // justify-content: center;
+// }
 
 .skillsTop .fab,
 .skillsBottom .fas,
 .skillsBottom .fab {
-  font-size: 3rem;
+  font-size: 5rem;
+  // border: 2px solid $white;
+  margin: 0 2rem;
+  padding: 4rem;
 }
 
+.skillsTop li,
 .skillsBottom li {
-  padding-bottom: 2rem;
+  margin: 1rem;
+  // border: 2px solid yellow;
+  text-align: center;
+}
+
+.skillsTop h3,
+.skillsBottom h3 {
+  margin: 0;
 }
 
 

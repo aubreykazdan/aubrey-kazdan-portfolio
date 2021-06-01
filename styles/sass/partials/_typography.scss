@@ -16,6 +16,10 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    @include fontStyles(2rem, 3.5rem, $white)
+}
+
 .tagline,
 .projectTitles {
     @include fontStyles(3rem, 3rem, $grey);

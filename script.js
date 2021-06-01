@@ -15,8 +15,15 @@ function toggleMenu() {
 
 const menuLinks = document.querySelectorAll(".menuLink")
 
-menuLinks.forEach (
-    function(menuLink) {
-        menuLink.addEventListener('click', toggleMenu);
-    }
-)
+// menuLinks.forEach (
+//     function(menuLink) {
+//         menuLink.addEventListener('click', toggleMenu);
+//     }
+// )
+
+
+if (window.matchMedia("(min-width: 915px)").matches) {
+    menu.classList.add("showMenu");
+  } else {
+    menu.classList.remove("showMenu")
+  }
