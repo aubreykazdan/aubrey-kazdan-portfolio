@@ -16,6 +16,10 @@ ul {
   margin: 0;
 }
 
+button {
+  border: 1px solid $white;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 90%;
@@ -203,7 +207,8 @@ a:hover figcaption {
   display: flex;
 }
 
-.close {
+.close,
+.modalButtonContainer button {
   color: $white;
   background-color: black;
   margin: 2rem;
@@ -213,12 +218,24 @@ a:hover figcaption {
   transition: all 1.3s ease-in-out;
 }
 
-.close:hover {
+.close {
+  margin: 3rem;
+  border: 1px solid $white
+}
+
+.modalButtonContainer .fas {
+  color: $white;
+}
+
+
+.close:hover,
+.modalButtonContainer .fas:hover {
   color: $grey;
   transform: rotate(360deg);
 }
 
 // --------- STYLINGS FOR FORM ---------
+
 .contact {
   padding: 10rem 0;
   background-color: $grey;
@@ -246,3 +263,4 @@ form {
   background-color: $black;
   color: $white
 }
+

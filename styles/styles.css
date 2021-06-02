@@ -322,6 +322,10 @@ ul {
   margin: 0;
 }
 
+button {
+  border: 1px solid #f7f7f7;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 90%;
@@ -543,7 +547,8 @@ a:hover figcaption {
   display: flex;
 }
 
-.close {
+.close,
+.modalButtonContainer button {
   color: #f7f7f7;
   background-color: black;
   margin: 2rem;
@@ -554,7 +559,17 @@ a:hover figcaption {
   transition: all 1.3s ease-in-out;
 }
 
-.close:hover {
+.close {
+  margin: 3rem;
+  border: 1px solid #f7f7f7;
+}
+
+.modalButtonContainer .fas {
+  color: #f7f7f7;
+}
+
+.close:hover,
+.modalButtonContainer .fas:hover {
   color: #888888;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -681,6 +696,7 @@ button {
           justify-content: flex-end;
   margin: 2rem 0;
   z-index: 98;
+  background-color: #2C2C2C;
 }
 .navList a {
   line-height: 50px;
@@ -697,14 +713,14 @@ button {
 
 .navbarToggle {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 5px;
   margin-top: 0.8rem;
   margin-right: 1.5rem;
   background-image: none;
   background: transparent;
   border: none;
-  z-index: 100;
+  z-index: 99;
 }
 
 .navbarToggle .fas {
@@ -767,7 +783,8 @@ button {
             flex-direction: column;
     top: 0;
     right: 0;
-    left: 271px;
+    left: 250px;
+    width: 30%;
     -webkit-transform: translateY(-110%);
             transform: translateY(-110%);
   }
@@ -789,14 +806,23 @@ button {
     padding-bottom: 2rem;
   }
 
-  .projects {
+  .projects,
+.contact {
     padding: 5rem 0;
   }
-  .projects h2 {
+  .projects h2,
+.contact h2 {
     padding-bottom: 2rem;
   }
 
   .proImages {
     display: block;
+  }
+
+  figcaption p {
+    font-size: 2rem;
+    line-height: 0.7rem;
+    color: white;
+    font-weight: 700;
   }
 }
