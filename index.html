@@ -7,15 +7,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/1df462a23f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Aubrey Kazdan</title>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navButtonContainer" >
+      <button type="button" class="navbarToggle">
+        <span class="srOnly">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="navContainer">
+      <ul class="navList">
+        <li>
+          <a class="menuLink" href="#home">HOME</a>
+        </li>
+        <li>
+          <a class="menuLink" href="#skills">SKILLS</a>
+        </li>
+        <li>
+          <a class="menuLink" href="#projects">PROJECTS</a>
+        </li>
+        <li>
+          <a class="menuLink" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
-    <div class="homeDivider">
-        <div class="homeImage"></div>
+    <div class="homeDivider" id="home">
+      <div class="homeImage fadeInLong"></div>
         <div class=homeContent>
-          <div class="homePadding">
+          <div class="homePadding fadeIn">
 
             <div class="intro">
               <h1>Aubrey Kazdan</h1>
@@ -23,9 +50,8 @@
             </div>
 
             <div class="bio">
-              </span>
               <p>An adaptive <span>communicator</span> and <span>leader</span> with a focus on functional web design that is friendly to all users. When I am not coding, I am listening to records on vinyl, replaying the Dark Souls games, or enjoying a good movie.</p>
-              <p>I'm always documenting my learning experiences with code and life. Get to know me by following any of the links below:</p>
+              <p>I also love documenting my learning experiences with code and life. Get to know me by following any of the links below:</p>
             </div>
 
             <div class="socials">
@@ -43,12 +69,169 @@
                   <li>
                     <a href="https://www.instagram.com/aubreykazdan/"><i class="fab fa-instagram"></i></a>
                   </li>
-                </ul>
-              </div>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </div>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skillsFlexContainer">
+        <div class="skillsColumnOne">
+          <ul>
+            <li>
+              <i class="fab fa-html5"></i>
+              <h3>HTML5</h3>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS3</h3>
+            </li>
+            <li>
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="skillsColumnTwo">
+          <ul>
+            <li>
+              <i class="fas fa-universal-access"></i>
+              <h3>Accessibility</h3>
+            </li>
+            <li>
+              <i class="fas fa-network-wired"></i>
+              <h3>RESTful API</h3>
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              <h3>Git</h3>
+            </li>
+            <li>
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Responsive Design</h3>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skillsColumnThree">
+          <ul>
+            <li>
+              <i class="fab fa-react"></i>
+              <h3>React</h3>
+            </li>
+            <li>
+              <i class="fab fa-sass"></i>
+              <h3>Sass</h3>
+            </li>
+            <li>
+              <i class="fas devicon-firebase-plain"></i>
+              <h3>Firebase</h3>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="projects" class="projects wrapper">
+      <h2 class="projectHeader">Projects</h2>
+
+      <div class="proImages">
+        <a href="#openModal1">
+          <figure class="imagesGallery">
+            <img class="img gallery" src="./assets/spiderman27.png" alt="" />
+            <figcaption>
+              <p>Movies A-to-Z</p>
+              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="#openModal2">
+          <figure class="imagesGallery">
+            <img class="img gallery" src="./assets/podcastPrioritizer.png" alt="" />
+            <figcaption>
+              <p>Podcast Prioritizer</p>
+              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+            </figcaption>
+          </figure>
+        </a>
+
+        <a href="#openModal3">
+          <figure class="imagesGallery">
+            <img class="img gallery" src="./assets/SurvivingBC.png" alt="" />
+            <figcaption>
+              <p>Surviving Bootcamp</p>
+              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#openModal4">
+          <figure class="imagesGallery">
+            <img class="img gallery" src="./assets/setup.png" alt="" />
+            <figcaption>
+              <p>Coming soon...</p>
+              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div id="openModal1" class="modalDialog">
+        <div>
+          <img class="img" src="./assets/spiderman27.png" alt="" />
+          <a href="#close" title="Close" class="close">X</a>
+          <!-- <p>Movies A-to-Z</p> -->
+        </div>
+      </div>
+    
+      <div id="openModal2" class="modalDialog">
+        <div>
+          <img class="img" src="./assets/podcastPrioritizer.png" alt="" />
+          <a href="#close" title="Close" class="close">X</a>
+        </div>
+      </div>
+    
+      <div id="openModal3" class="modalDialog">
+        <div>
+          <img class="img" src="./assets/SurvivingBC.png" alt="" />
+          <a href="#close" title="Close" class="close">X</a>
+        </div>
+      </div>
+
+      <div id="openModal4" class="modalDialog">
+        <div>
+          <img class="img" src="./assets/easteregg.jpg" alt="" />
+          <a href="#close" title="Close" class="close">X</a>
+          <!-- <p>There's nothing here but a picture of me. Oops!</p> -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <div class="formContainer wrapper">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqldoqw" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="Nicolas Cage" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@email.com" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Wow this is a nice textbox, ain't it?" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
   </main>
+<script src="./script.js"></script>
 </body>
 </html>

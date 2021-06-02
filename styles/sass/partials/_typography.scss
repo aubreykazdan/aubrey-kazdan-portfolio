@@ -10,12 +10,27 @@ body {
     background-image: url(../../../assets/background.jpg)
 }
 
-h1 {
-    @include fontStyles(7rem, 6rem);
+h1,
+h2 {
+    @include fontStyles(7rem, 7rem);
     font-weight: 400;
 }
 
-.tagline {
+h2 {
+    color: $white;
+    text-align: center;
+  }
+
+h3 {
+    @include fontStyles(2rem, 3.5rem, $white);
+}
+
+.projectHeader {
+    color: $lighterGrey;
+}
+
+.tagline,
+.projectTitles {
     @include fontStyles(3rem, 3rem, $grey);
     font-weight: 400;
 }

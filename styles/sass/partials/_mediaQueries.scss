@@ -1,20 +1,43 @@
-@media (max-width: 900px) {
+@media (max-width: 915px) {
   .homeDivider {
     height: auto;
     flex-wrap: wrap;
-    flex-direction: column;
+    // flex-direction: column;
   }
   .homeImage {
     width: 100%;
     height: 60vh;
-  }
-
-  .homeContent {
-    width: 100%;
-    height: 80vh;
+    background-image: url(../../../assets/portraitmobilegrey.jpg);
   }
 
   .homePadding {
+    padding: 0.5rem 2rem;
     margin: 0;
+  }
+
+  .homeContent,
+  .proOneContent {
+    width: 100%;
+    height: auto;
+  }
+
+  // --------- STYLINGS FOR PROJECTS ---------
+  .proImages {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbarToggle {
+    right: 35px;
+  }
+  
+  .navList {
+    flex-direction: column;
+    top: 30px;
+    right: 0;
+    left: 270px;
+    transform: translateX(-100%);
   }
 }

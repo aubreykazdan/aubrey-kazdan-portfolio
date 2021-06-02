@@ -1,9 +1,28 @@
+body {
+  width: 100vw;
+}
+
+h2 {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid yellow;
 }
+
+
+// --------- STYLINGS FOR HOME PAGE ---------
 
 .homeDivider {
   width: 100vw;
@@ -13,18 +32,15 @@
 
 .homeImage {
   width: 50%;
-  // max-width: 870px;
-  height: 100vh;
-  background-image: url(../../../assets/portraitshot-cropped.png);
+  height: 100%;
+  background-image: url(../../../assets/portraitBig.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
 }
 
 .homeContent {
   width: 50%;
-  // max-width: 870px;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 
@@ -46,14 +62,176 @@
   width: 100%;
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
     li {
       display: inline-block;
-      margin-right: 1rem;
+      margin-right: 5rem;
     }
   }
 }
+// --------- STYLINGS FOR SKILLS SECTIONS ---------
+.skills {
+  background-color: $grey;
+  margin: 0;
+  color: $white;
+  padding: 10rem 0;
+  h2 {
+    padding-bottom: 10rem;
+  }
+}
+
+.skillsFlexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .fab,
+  .fas {
+    font-size: 7rem;
+    height: 100px;
+    width: 100px;
+    padding: 2rem 0;
+  }
+  li {
+    margin: 1rem;
+    text-align: center;
+  }
+  h3 {
+    margin: 0;
+  }
+}
+
+// --------- STYLINGS FOR PROJECTS ---------
+.projects {
+  padding: 10rem 0;
+}
+
+.projectHeader {
+  padding-bottom: 10rem;
+}
+
+.proImages {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin: 0 1rem;
+}
+
+.imagesGallery {
+  position:relative;
+  padding: 0;
+  margin: 1rem;
+  .gallery {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+figcaption {
+  height: calc(100% - 2.5%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  p {
+    position: relative;
+    @include fontStyles(4rem, 0.7rem, white);
+    font-weight: 700;
+  }
+  .lupa {
+    position: relative;
+    // padding-top: 13rem;
+  }
+}
+
+figcaption:hover {
+  opacity: 1;
+  top: 0;
+  color: white;
+}
+
+a:hover figcaption {
+  opacity: 0.8;
+  background-color: #867d82;
+  top: 0;
+  color: #fff;
+  transition: all 1.2s;
+}
+
+.modalDialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(150, 132, 132, 0.7);
+  z-index: 99;
+  opacity:0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(790px * 1.77);
+    max-height: 790px;
+    color: $black;
+    position: relative;
+    margin: 0 5rem;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.close {
+  color: $white;
+  background-color: black;
+  margin-top: 2rem;
+  padding: 2rem;
+  line-height: 2rem;
+  font-size: 4rem;
+  transition: all 1.3s ease-in-out;
+}
 
 
+.close:hover {
+  color: $grey;
+  transform: rotate(360deg);
+}
 
+// --------- STYLINGS FOR FORM ---------
+.contact {
+  padding: 10rem 0;
+  background-color: $grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+  input {
+    padding: 1rem;
+    border: none;
+  }
+}
