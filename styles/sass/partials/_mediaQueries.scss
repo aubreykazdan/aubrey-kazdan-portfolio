@@ -35,9 +35,33 @@
   
   .navList {
     flex-direction: column;
-    top: 30px;
+    top: 0;
     right: 0;
-    left: 270px;
-    transform: translateX(-100%);
+    left: 271px;
+    transform: translateY(-110%);
+  }
+
+  .showMenuDesktop {
+    transform: translateY(45px);
+  }
+
+  .skills {
+    padding: 5rem 0;
+    h2 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .projects {
+    padding: 5rem 0;
+    h2 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .proImages {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
   }
 }

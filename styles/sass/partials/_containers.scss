@@ -224,10 +224,12 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: none;
   }
   input {
