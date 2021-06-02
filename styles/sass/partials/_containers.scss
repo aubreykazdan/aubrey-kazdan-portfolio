@@ -16,6 +16,10 @@ ul {
   margin: 0;
 }
 
+button {
+  border: 1px solid $white;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 90%;
@@ -43,17 +47,17 @@ ul {
   width: 50%;
   height: 100%;
   display: flex;
+  .homePadding {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 4rem;
+      .intro {
+        padding: 1rem 0;
+      }
+  }
 }
 
 
-.homePadding {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 4rem;
-    .intro {
-      padding: 1rem 0;
-    }
-}
 
 .socials {
   padding-bottom: 1rem;
@@ -70,6 +74,10 @@ ul {
       margin-right: 5rem;
     }
   }
+}
+
+.socialIcons i {
+  font-size: 2.5rem;
 }
 // --------- STYLINGS FOR SKILLS SECTIONS ---------
 .skills {
@@ -128,7 +136,7 @@ ul {
 }
 
 figcaption {
-  height: calc(100% - 2.5%);
+  height: 97.6%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -142,10 +150,6 @@ figcaption {
     @include fontStyles(4rem, 0.7rem, white);
     font-weight: 700;
   }
-  .lupa {
-    position: relative;
-    // padding-top: 13rem;
-  }
 }
 
 figcaption:hover,
@@ -153,15 +157,22 @@ figcaption:focus,
 figcaption:active {
   opacity: 1;
   top: 0;
-  color: white;
+  // color: white;
 }
 
 a:hover figcaption {
-  opacity: 0.8;
-  background-color: #867d82;
-  top: 0;
-  color: #fff;
+  opacity: 0.9;
+  background-color: $grey;
+  // top: 0;
+  color: $white;
   transition: all 1.2s;
+}
+
+.projectText {
+  margin: 1rem 1rem 2rem 1rem;
+  .projectLinks a {
+    margin-right: 2rem;
+  }
 }
 
 .modalDialog {
@@ -173,7 +184,7 @@ a:hover figcaption {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(150, 132, 132, 0.7);
+  background: rgba(136, 136, 136, 0.9);
   z-index: 99;
   opacity:0;
   transition: opacity 400ms ease-in;
@@ -204,7 +215,8 @@ a:hover figcaption {
   display: flex;
 }
 
-.close {
+.close,
+.modalButtonContainer button {
   color: $white;
   background-color: black;
   margin: 2rem;
@@ -214,15 +226,31 @@ a:hover figcaption {
   transition: all 1.3s ease-in-out;
 }
 
-.close:hover {
+.close {
+  margin: 3rem;
+  border: 1px solid $white
+}
+
+.modalButtonContainer .fas {
+  color: $white;
+}
+
+
+.close:hover,
+.modalButtonContainer .fas:hover {
   color: $grey;
   transform: rotate(360deg);
 }
 
-// --------- STYLINGS FOR FORM ---------
+// --------- STYLINGS FOR CONTACT ---------
+
 .contact {
   padding: 10rem 0;
   background-color: $grey;
+}
+
+.contactHeader {
+  padding-bottom: 5rem;
 }
 
 form {
@@ -247,3 +275,4 @@ form {
   background-color: $black;
   color: $white
 }
+
