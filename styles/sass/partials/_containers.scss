@@ -1,5 +1,6 @@
 body {
   width: 100vw;
+  background-image: url(../../../assets/background.jpg)
 }
 
 h2 {
@@ -113,7 +114,6 @@ ul {
 .proImages {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
   margin: 0 1rem;
 }
 
@@ -148,7 +148,9 @@ figcaption {
   }
 }
 
-figcaption:hover {
+figcaption:hover,
+figcaption:focus,
+figcaption:active {
   opacity: 1;
   top: 0;
   color: white;
@@ -236,4 +238,9 @@ form {
     padding: 1rem;
     border: none;
   }
+}
+
+.submit {
+  background-color: $black;
+  color: $white
 }

@@ -30,7 +30,7 @@
 
 @media (max-width: 400px) {
   .navbarToggle {
-    right: 35px;
+    right: -6px;
   }
   
   .navList {
@@ -43,6 +43,10 @@
 
   .showMenuDesktop {
     transform: translateY(45px);
+  }
+
+  .socialIcons ul {
+    justify-content: space-around;
   }
 
   .skills {
@@ -61,7 +65,5 @@
 
   .proImages {
     display: block;
-    // grid-template-columns: 100%;
-    // grid-template-rows: 100%;
   }
 }

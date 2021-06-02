@@ -248,12 +248,12 @@ html {
   font-size: 62.5%;
 }
 
-body {
+body,
+input {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2rem;
   line-height: 3.5rem;
   color: #c5c5c5;
-  background-image: url(../../../assets/background.jpg);
 }
 
 h1,
@@ -306,6 +306,7 @@ a:hover {
 
 body {
   width: 100vw;
+  background-image: url(../../../assets/background.jpg);
 }
 
 h2 {
@@ -428,7 +429,6 @@ ul {
 .proImages {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
   margin: 0 1rem;
 }
 
@@ -473,7 +473,9 @@ figcaption .lupa {
   position: relative;
 }
 
-figcaption:hover {
+figcaption:hover,
+figcaption:focus,
+figcaption:active {
   opacity: 1;
   top: 0;
   color: white;
@@ -598,6 +600,11 @@ form input {
   border: none;
 }
 
+.submit {
+  background-color: #2C2C2C;
+  color: #f7f7f7;
+}
+
 .fadeIn {
   animation: fadeIn 2500ms ease 1;
   -webkit-animation: fadeIn 2500ms ease 1;
@@ -655,11 +662,10 @@ button {
 }
 
 .navList {
+  border: 1px solid #f7f7f7;
   position: fixed;
   top: -25px;
   right: 85px;
-  width: 100%;
-  height: auto;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.1s;
@@ -683,7 +689,8 @@ button {
 }
 
 .navList a:focus,
-.navList a:hover {
+.navList a:hover,
+.navList a:active {
   color: #888888;
 }
 
@@ -704,10 +711,12 @@ button {
   color: #f7f7f7;
   background: #2C2C2C;
   padding: 1rem;
+  border: 1px solid #f7f7f7;
 }
 
 .navbarToggle .fas:focus,
-.navbarToggle .fas:hover {
+.navbarToggle .fas:hover,
+.navbarToggle .fas:active {
   color: #888888;
 }
 
@@ -747,7 +756,7 @@ button {
 }
 @media (max-width: 400px) {
   .navbarToggle {
-    right: 35px;
+    right: -6px;
   }
 
   .navList {
@@ -765,6 +774,11 @@ button {
   .showMenuDesktop {
     -webkit-transform: translateY(45px);
             transform: translateY(45px);
+  }
+
+  .socialIcons ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .skills {
