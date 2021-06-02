@@ -355,13 +355,12 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
-
-.homePadding {
+.homeContent .homePadding {
   margin-top: auto;
   margin-bottom: auto;
   padding: 4rem;
 }
-.homePadding .intro {
+.homeContent .homePadding .intro {
   padding: 1rem 0;
 }
 
@@ -384,6 +383,10 @@ button {
 .socialIcons ul li {
   display: inline-block;
   margin-right: 5rem;
+}
+
+.socialIcons i {
+  font-size: 2.5rem;
 }
 
 .skills {
@@ -489,6 +492,13 @@ a:hover figcaption {
   transition: all 1.2s;
 }
 
+.projectText {
+  margin: 1rem 1rem 2rem 1rem;
+}
+.projectText .projectLinks a {
+  margin-right: 2rem;
+}
+
 .modalDialog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,6 +588,10 @@ a:hover figcaption {
 .contact {
   padding: 10rem 0;
   background-color: #888888;
+}
+
+.contactHeader {
+  padding-bottom: 5rem;
 }
 
 form {

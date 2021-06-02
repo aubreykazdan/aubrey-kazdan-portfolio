@@ -141,45 +141,89 @@
       <h2 class="projectHeader">Projects</h2>
 
       <div class="proImages">
-        <a href="#openModal1">
-          <figure class="imagesGallery">
-            <img class="img gallery" src="./assets/spiderman27.png" alt="" />
-            <figcaption>
-              <p>Movies A-to-Z</p>
-              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
-            </figcaption>
-          </figure>
-        </a>
+        <div class="movieProject">
+          <a href="#openModal1">
+            <figure class="imagesGallery">
+              <img class="img gallery" src="./assets/spiderman27.png" alt="" />
+              <figcaption>
+                <p>Movies A-to-Z</p>
+                <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+              </figcaption>
+            </figure>
+          </a>
 
-        <a href="#openModal2">
-          <figure class="imagesGallery">
-            <img class="img gallery" src="./assets/podcastPrioritizer.png" alt="" />
-            <figcaption>
-              <p>Podcast Prioritizer</p>
-              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
-            </figcaption>
-          </figure>
-        </a>
+          <div class="projectText">
+            <h3>Movies A-to-Z</h3>
+            <p>A game where users can compare movies based on IMDb user rating scores. Built in one week in collaboration with <a href="https://github.com/zachbines">Zach Bines</a>.</p>
+            <div class="projectLinks">
+              <a href="https://zap-2.github.io/Movies-A-to-Z/">Live</a>
+              <a href="https://github.com/ZAP-2/Movies-A-to-Z">Repo</a>
+            </div>
+          </div>
+        </div>
 
-        <a href="#openModal3">
-          <figure class="imagesGallery">
-            <img class="img gallery" src="./assets/SurvivingBC.png" alt="" />
-            <figcaption>
-              <p>Surviving Bootcamp</p>
-              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
-            </figcaption>
-          </figure>
-        </a>
+        <div class="podcastProject">
+          <a href="#openModal2">
+            <figure class="imagesGallery">
+              <img class="img gallery" src="./assets/podcastPrioritizer.png" alt="" />
+              <figcaption>
+                <p>Podcast Prioritizer</p>
+                <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+              </figcaption>
+            </figure>
+          </a>
+
+          <div class="projectText">
+            <h3>Podcast Prioritizer</h3>
+            <p>This app suggests podcasts based on commute times and user search queries. Built in one week in collaboration with 
+              <a href="https://github.com/clembrulee">Clement Sung</a>, 
+              <a href="https://github.com/PaulSzadurski">Paul Szadurski</a>, and
+              <a href="https://github.com/IlyaMarvinIlyashyk">Ilya Marvin</a>. 
+            </p>
+            <div class="projectLinks">
+              <a href="https://podcast-prioritizer.netlify.app/">Live</a>
+              <a href="https://github.com/capibara33/podcastPrioritizer">Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="survivingProject">
+          <a href="#openModal3">
+            <figure class="imagesGallery">
+              <img class="img gallery" src="./assets/SurvivingBC.png" alt="" />
+              <figcaption>
+                <p>Surviving Bootcamp</p>
+                <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+              </figcaption>
+            </figure>
+          </a>
+
+          <div class="projectText">
+            <h3>Surviving Bootcamp</h3>
+            <p>Mental-health themed to-do list that keeps track of projects/goals and due-dates. Built in one week.</p>
+            <div class="projectLinks">
+              <a href="https://surviving-bootcamp.netlify.app/">Live</a>
+              <a href="https://github.com/aubreykazdan/aubreykazdanProjectThree">Repo</a>
+            </div>
+          </div>
+        </div>
         
-        <a href="#openModal4">
-          <figure class="imagesGallery">
-            <img class="img gallery" src="./assets/setup.png" alt="" />
-            <figcaption>
-              <p>Coming soon...</p>
-              <img class="lupa" src="./assets/lupa.jpg" alt=""/>
-            </figcaption>
-          </figure>
-        </a>
+        <div class="comingSoonProject">
+          <a href="#openModal4">
+            <figure class="imagesGallery">
+              <img class="img gallery" src="./assets/setup.png" alt="" />
+              <figcaption>
+                <p>Coming soon...</p>
+                <img class="lupa" src="./assets/lupa.jpg" alt=""/>
+              </figcaption>
+            </figure>
+          </a>
+
+          <div class="projectText">
+            <h3>Next Project Coming Soon...</h3>
+            <p>Want to work on a project together? Interested in code? Or perhaps you want to offer me a job? Refer to the contact form below so that we can get to know one another!</p>
+          </div>
+        </div>
       </div>
 
       <div id="openModal1" class="modalDialog">
@@ -228,8 +272,10 @@
 
 
     <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <div class="formContainer wrapper">
+      <h2 class="contactHeader">Contact</h2>
+      <div class="contactContainer wrapper">
+
+
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqldoqw" method="post">
           <fieldset id="fs-frm-inputs">
             <label for="full-name">Full Name</label>
@@ -242,8 +288,15 @@
           </fieldset>
           <input class="submit" type="submit" value="Submit">
         </form>
+
+
       </div>
+
+      <!-- <div class="calendar">
+        <p><i class="far fa-calendar"></i></p>
+      </div> -->
     </section>
+
   </main>
 <script src="./script.js"></script>
 </body>
