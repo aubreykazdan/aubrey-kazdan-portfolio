@@ -4,10 +4,10 @@ html {
     font-size: 62.5%;
 }
 
-body {
+body,
+input {
     font-family: $primaryFont;
     @include fontStyles(2rem, 3.5rem);
-    background-image: url(../../../assets/background.jpg)
 }
 
 h1,

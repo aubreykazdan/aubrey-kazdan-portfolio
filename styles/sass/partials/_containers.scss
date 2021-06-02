@@ -1,5 +1,6 @@
 body {
   width: 100vw;
+  background-image: url(../../../assets/background.jpg)
 }
 
 h2 {
@@ -113,7 +114,6 @@ ul {
 .proImages {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
   margin: 0 1rem;
 }
 
@@ -148,7 +148,9 @@ figcaption {
   }
 }
 
-figcaption:hover {
+figcaption:hover,
+figcaption:focus,
+figcaption:active {
   opacity: 1;
   top: 0;
   color: white;
@@ -176,7 +178,7 @@ a:hover figcaption {
   opacity:0;
   transition: opacity 400ms ease-in;
   pointer-events: none;
-  div {
+  .modalImageContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,16 +200,19 @@ a:hover figcaption {
   pointer-events: auto;
 }
 
+.modalButtonContainer {
+  display: flex;
+}
+
 .close {
   color: $white;
   background-color: black;
-  margin-top: 2rem;
+  margin: 2rem;
   padding: 2rem;
   line-height: 2rem;
   font-size: 4rem;
   transition: all 1.3s ease-in-out;
 }
-
 
 .close:hover {
   color: $grey;
@@ -236,4 +241,9 @@ form {
     padding: 1rem;
     border: none;
   }
+}
+
+.submit {
+  background-color: $black;
+  color: $white
 }
