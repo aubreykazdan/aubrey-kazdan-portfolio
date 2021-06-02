@@ -322,6 +322,10 @@ ul {
   margin: 0;
 }
 
+button {
+  border: 1px solid #f7f7f7;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 90%;
@@ -351,13 +355,12 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-
-.homePadding {
+.homeContent .homePadding {
   margin-top: auto;
   margin-bottom: auto;
   padding: 4rem;
 }
-.homePadding .intro {
+.homeContent .homePadding .intro {
   padding: 1rem 0;
 }
 
@@ -380,6 +383,10 @@ ul {
 .socialIcons ul li {
   display: inline-block;
   margin-right: 5rem;
+}
+
+.socialIcons i {
+  font-size: 2.5rem;
 }
 
 .skills {
@@ -443,7 +450,7 @@ ul {
 }
 
 figcaption {
-  height: calc(100% - 2.5%);
+  height: 97.6%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,25 +476,27 @@ figcaption p {
   color: white;
   font-weight: 700;
 }
-figcaption .lupa {
-  position: relative;
-}
 
 figcaption:hover,
 figcaption:focus,
 figcaption:active {
   opacity: 1;
   top: 0;
-  color: white;
 }
 
 a:hover figcaption {
-  opacity: 0.8;
-  background-color: #867d82;
-  top: 0;
-  color: #fff;
+  opacity: 0.9;
+  background-color: #888888;
+  color: #f7f7f7;
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
+}
+
+.projectText {
+  margin: 1rem 1rem 2rem 1rem;
+}
+.projectText .projectLinks a {
+  margin-right: 2rem;
 }
 
 .modalDialog {
@@ -505,7 +514,7 @@ a:hover figcaption {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(150, 132, 132, 0.7);
+  background: rgba(136, 136, 136, 0.9);
   z-index: 99;
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
@@ -548,7 +557,8 @@ a:hover figcaption {
   display: flex;
 }
 
-.close {
+.close,
+.modalButtonContainer button {
   color: #f7f7f7;
   background-color: black;
   margin: 2rem;
@@ -559,7 +569,17 @@ a:hover figcaption {
   transition: all 1.3s ease-in-out;
 }
 
-.close:hover {
+.close {
+  margin: 3rem;
+  border: 1px solid #f7f7f7;
+}
+
+.modalButtonContainer .fas {
+  color: #f7f7f7;
+}
+
+.close:hover,
+.modalButtonContainer .fas:hover {
   color: #888888;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -568,6 +588,10 @@ a:hover figcaption {
 .contact {
   padding: 10rem 0;
   background-color: #888888;
+}
+
+.contactHeader {
+  padding-bottom: 5rem;
 }
 
 form {
@@ -686,6 +710,7 @@ button {
           justify-content: flex-end;
   margin: 2rem 0;
   z-index: 98;
+  background-color: #2C2C2C;
 }
 .navList a {
   line-height: 50px;
@@ -702,14 +727,14 @@ button {
 
 .navbarToggle {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 5px;
   margin-top: 0.8rem;
   margin-right: 1.5rem;
   background-image: none;
   background: transparent;
   border: none;
-  z-index: 100;
+  z-index: 99;
 }
 
 .navbarToggle .fas {
@@ -772,7 +797,8 @@ button {
             flex-direction: column;
     top: 0;
     right: 0;
-    left: 271px;
+    left: 250px;
+    width: 30%;
     -webkit-transform: translateY(-110%);
             transform: translateY(-110%);
   }
@@ -794,14 +820,23 @@ button {
     padding-bottom: 2rem;
   }
 
-  .projects {
+  .projects,
+.contact {
     padding: 5rem 0;
   }
-  .projects h2 {
+  .projects h2,
+.contact h2 {
     padding-bottom: 2rem;
   }
 
   .proImages {
     display: block;
+  }
+
+  figcaption p {
+    font-size: 2rem;
+    line-height: 0.7rem;
+    color: white;
+    font-weight: 700;
   }
 }

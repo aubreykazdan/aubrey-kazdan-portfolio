@@ -17,6 +17,7 @@ button {
   justify-content: flex-end;
   margin: 2rem 0;
   z-index: 98;
+  background-color: $black;
   a {
     line-height: 50px;
     padding: 1rem 0.5rem;
@@ -33,14 +34,14 @@ button {
 
 .navbarToggle {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 5px;
   margin-top: 0.8rem;
   margin-right: 1.5rem;
   background-image: none;
   background: transparent;
   border: none;
-  z-index: 100;
+  z-index: 99;
 }
 
 .navbarToggle .fas {
