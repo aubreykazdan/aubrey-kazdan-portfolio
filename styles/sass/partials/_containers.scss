@@ -12,6 +12,13 @@ h2 {
 
 ul {
   padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -165,7 +172,7 @@ a:hover figcaption {
   bottom: 0;
   left: 0;
   background: rgba(150, 132, 132, 0.7);
-  z-index: 99999;
+  z-index: 99;
   opacity:0;
   transition: opacity 400ms ease-in;
   pointer-events: none;
@@ -174,19 +181,26 @@ a:hover figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(790px * 1.77);
-    height: 790px;
-    color: #000;
+    max-width: calc(790px * 1.77);
+    max-height: 790px;
+    color: $black;
     position: relative;
+    margin: 0 5rem;
   }
   img {
-    height: 80%;
+    height: auto;
+    width: 100%;
   }
-  p {
-    color: $white;
-    background-color: $black;
-    padding: 1rem;
-  }
+  // p {
+  //   position: absolute;
+  //   bottom: 5rem;
+  //   right: 35rem;
+  //   color: $white;
+  //   background-color: $black;
+  //   border: 1px solid white;
+  //   box-shadow: 0rem 0rem 2rem white;
+  //   padding: 1rem 10rem;
+  // }
 }
 
 .modalDialog:target {
@@ -196,14 +210,13 @@ a:hover figcaption {
 
 .close {
   color: $white;
-  line-height: 25px;
-  position: absolute;
-  right: 20rem;
-  text-align: center;
-  top: 12rem;
-  width: 24px;
-  text-decoration: none;
-  font-weight: normal;
+  background-color: black;
+  margin-top: 2rem;
+  padding: 2rem;
+  line-height: 2rem;
+  // position: absolute;
+  // right: 20rem;
+  // top: 12rem;
   font-size: 4rem;
   transition: all 1.3s ease-in-out;
 }

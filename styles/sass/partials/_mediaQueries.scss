@@ -29,8 +29,15 @@
 }
 
 @media (max-width: 400px) {
+  .navbarToggle {
+    right: 35px;
+  }
+  
   .navList {
     flex-direction: column;
-    top: 0;
+    top: 30px;
+    right: 0;
+    left: 270px;
+    transform: translateX(-100%);
   }
 }

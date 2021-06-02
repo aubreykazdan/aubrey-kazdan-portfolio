@@ -9,14 +9,15 @@ button {
 .navList {
   position: fixed;
   top: -25px;
-  right: 0;
-  left: -90px;
+  right: 85px;
   width: 100%;
   height: auto;
   transform: translateY(-100%);
   transition: transform 0.1s;
   display: flex;
   justify-content: flex-end;
+  margin: 2rem 0;
+  z-index: 98;
   a {
     line-height: 50px;
     padding: 1rem 0.5rem;
@@ -55,6 +56,10 @@ button {
 }
 
 // This unhides the navbar when ham button is clicked
-.showMenu {
+.showMenuDesktop {
   transform: translateY(15px);
+}
+
+.showMenuMobile {
+  transform: translateX(15px);
 }

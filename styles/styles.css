@@ -318,6 +318,13 @@ h2 {
 
 ul {
   padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .homeDivider {
@@ -497,7 +504,7 @@ a:hover figcaption {
   bottom: 0;
   left: 0;
   background: rgba(150, 132, 132, 0.7);
-  z-index: 99999;
+  z-index: 99;
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
@@ -517,18 +524,15 @@ a:hover figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(790px * 1.77);
-  height: 790px;
-  color: #000;
+  max-width: calc(790px * 1.77);
+  max-height: 790px;
+  color: #2C2C2C;
   position: relative;
+  margin: 0 5rem;
 }
 .modalDialog img {
-  height: 80%;
-}
-.modalDialog p {
-  color: #f7f7f7;
-  background-color: #2C2C2C;
-  padding: 1rem;
+  height: auto;
+  width: 100%;
 }
 
 .modalDialog:target {
@@ -538,14 +542,10 @@ a:hover figcaption {
 
 .close {
   color: #f7f7f7;
-  line-height: 25px;
-  position: absolute;
-  right: 20rem;
-  text-align: center;
-  top: 12rem;
-  width: 24px;
-  text-decoration: none;
-  font-weight: normal;
+  background-color: black;
+  margin-top: 2rem;
+  padding: 2rem;
+  line-height: 2rem;
   font-size: 4rem;
   -webkit-transition: all 1.3s ease-in-out;
   transition: all 1.3s ease-in-out;
@@ -616,8 +616,7 @@ button {
 .navList {
   position: fixed;
   top: -25px;
-  right: 0;
-  left: -90px;
+  right: 85px;
   width: 100%;
   height: auto;
   -webkit-transform: translateY(-100%);
@@ -632,6 +631,8 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: 2rem 0;
+  z-index: 98;
 }
 .navList a {
   line-height: 50px;
@@ -669,9 +670,14 @@ button {
   color: #888888;
 }
 
-.showMenu {
+.showMenuDesktop {
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
+}
+
+.showMenuMobile {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
 }
 
 @media (max-width: 915px) {
@@ -704,11 +710,19 @@ button {
   }
 }
 @media (max-width: 400px) {
+  .navbarToggle {
+    right: 35px;
+  }
+
   .navList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 0;
+    top: 30px;
+    right: 0;
+    left: 270px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
