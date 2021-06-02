@@ -90,7 +90,7 @@ ul {
     font-size: 7rem;
     height: 100px;
     width: 100px;
-    padding: 2rem;
+    padding: 2rem 0;
   }
   li {
     margin: 1rem;
@@ -191,16 +191,6 @@ a:hover figcaption {
     height: auto;
     width: 100%;
   }
-  // p {
-  //   position: absolute;
-  //   bottom: 5rem;
-  //   right: 35rem;
-  //   color: $white;
-  //   background-color: $black;
-  //   border: 1px solid white;
-  //   box-shadow: 0rem 0rem 2rem white;
-  //   padding: 1rem 10rem;
-  // }
 }
 
 .modalDialog:target {
@@ -214,9 +204,6 @@ a:hover figcaption {
   margin-top: 2rem;
   padding: 2rem;
   line-height: 2rem;
-  // position: absolute;
-  // right: 20rem;
-  // top: 12rem;
   font-size: 4rem;
   transition: all 1.3s ease-in-out;
 }
@@ -225,4 +212,26 @@ a:hover figcaption {
 .close:hover {
   color: $grey;
   transform: rotate(360deg);
+}
+
+// --------- STYLINGS FOR FORM ---------
+.contact {
+  padding: 10rem 0;
+  background-color: $grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+  input {
+    padding: 1rem;
+    border: none;
+  }
 }
