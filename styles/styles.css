@@ -318,6 +318,7 @@ h2 {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 .wrapper {
@@ -503,7 +504,7 @@ a:hover figcaption {
   bottom: 0;
   left: 0;
   background: rgba(150, 132, 132, 0.7);
-  z-index: 99999;
+  z-index: 99;
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
@@ -615,8 +616,7 @@ button {
 .navList {
   position: fixed;
   top: -25px;
-  right: 0;
-  left: -90px;
+  right: 85px;
   width: 100%;
   height: auto;
   -webkit-transform: translateY(-100%);
@@ -631,6 +631,8 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: 2rem 0;
+  z-index: 98;
 }
 .navList a {
   line-height: 50px;
@@ -668,9 +670,14 @@ button {
   color: #888888;
 }
 
-.showMenu {
+.showMenuDesktop {
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
+}
+
+.showMenuMobile {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
 }
 
 @media (max-width: 915px) {
@@ -703,11 +710,19 @@ button {
   }
 }
 @media (max-width: 400px) {
+  .navbarToggle {
+    right: 35px;
+  }
+
   .navList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 0;
+    top: 30px;
+    right: 0;
+    left: 270px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
