@@ -812,10 +812,8 @@ button {
 
 .navbarToggle {
   position: fixed;
-  top: 1px;
-  right: 5px;
-  margin-top: 0.8rem;
-  margin-right: 1.5rem;
+  top: 0.9rem;
+  right: 1.5rem;
   background-image: none;
   background: transparent;
   border: none;
@@ -872,7 +870,7 @@ button {
 }
 @media (max-width: 400px) {
   .navbarToggle {
-    right: -6px;
+    right: 0.9rem;
   }
 
   .navList {
@@ -903,6 +901,17 @@ button {
   }
   .skills h2 {
     padding-bottom: 2rem;
+  }
+  .skills .skillsFlexContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skills .skillsFlexContainer li {
+    margin: 0;
+  }
+  .skills .skillsFlexContainer i {
+    font-size: 5rem;
   }
 
   .projects,
