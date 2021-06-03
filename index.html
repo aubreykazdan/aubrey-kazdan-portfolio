@@ -40,9 +40,9 @@
   </nav>
 
   <main>
-    <div class="homeDivider wrapper" id="home">
+    <div class="homeDivider" id="home">
       <div class="homeImage fadeInLong"></div>
-        <div class=homeContent>
+        <div class=homeContent wrapper>
           <div class="homePadding fadeIn">
 
             <div class="intro">
@@ -163,7 +163,7 @@
 
           <div class="projectText">
             <h3>Movies A-to-Z</h3>
-            <p>HTML5 | CSS3 | JavaScript | Sass | RESTful API</p>
+            <p>HTML5 | CSS3 | JavaScript | RESTful API</p>
             <p>A game where users can compare movies based on IMDb user rating scores. Built in one week in collaboration with <a href="https://github.com/zachbines">Zach Bines</a>.</p>
             <div class="projectLinks">
               <a href="https://zap-2.github.io/Movies-A-to-Z/">Live</a>
@@ -223,8 +223,9 @@
         <div class="comingSoonProject">
           <a href="#openModal4">
             <figure class="imagesGallery">
-              <video width="100%" height="100%" autoplay loop muted>
+              <video width="100%" height="100%" playsinline autoplay loop muted>
                 <source src="./assets/igor.mp4" type="video/mp4">
+              Your broswer does not support the video tag.
               </video>
               <figcaption>
                 <p>Coming soon...</p>
@@ -312,6 +313,13 @@
             </fieldset>
             <input class="submitForm" type="submit" value="Submit">
           </form>
+        </div>
+
+        <div class="movieContainer">
+          <video width="320px" height="240px" playsinline autoplay loop muted>
+            <source src="./assets/aubrey.mp4" type="video/mp4">
+          Your broswer does not support the video tag.
+          </video>
         </div>
       </div>
 
