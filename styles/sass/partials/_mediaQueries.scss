@@ -2,7 +2,6 @@
   .homeDivider {
     height: auto;
     flex-wrap: wrap;
-    // flex-direction: column;
   }
   .homeImage {
     width: 100%;
@@ -29,16 +28,17 @@
 }
 
 @media (max-width: 400px) {
-  .navbarToggle {
-    right: 0.3rem;
-  }
   
   .navList {
     flex-direction: column;
-    top: 0;
-    right: 0.3rem;
+    top: 1.5rem;
+    right: 1.3rem;
     width: 30%;
-    transform: translateY(-110%);
+    transform: translateY(-120%);
+  }
+  
+  .navbarToggle {
+    right: 1rem;
   }
 
   .showMenu {
@@ -84,5 +84,12 @@
   figcaption p {
       @include fontStyles(2rem, 0.7rem, $black);
       font-weight: 700;
+  }
+
+  .scrollToTop {
+    bottom: 1.5rem;
+    right: 1.3rem;
+    padding: 0.4rem;
+    font-size: 2.5rem;
   }
 }

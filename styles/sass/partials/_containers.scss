@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   background-image: url(../../../assets/background.jpg);
@@ -24,7 +28,7 @@ ul {
 }
 
 button {
-  border: 1px solid $white;
+  border: 2px solid $white;
 }
 
 .wrapper {
@@ -32,7 +36,6 @@ button {
   width: 90%;
   margin: 0 auto;
 }
-
 
 // --------- STYLINGS FOR HOME PAGE ---------
 
@@ -63,8 +66,6 @@ button {
       }
   }
 }
-
-
 
 .socials {
   padding-bottom: 1rem;
@@ -236,7 +237,7 @@ a:hover figcaption {
 
 .close {
   margin: 3rem;
-  border: 1px solid $white
+  border: 2px solid $white
 }
 
 .modalButtonContainer .fas {
@@ -318,6 +319,7 @@ form {
 .submitForm {
   background-color: $black;
   color: $white;
+  border: 2px solid $white;
   cursor: pointer;
   margin: 0 30%;
 }

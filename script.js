@@ -1,9 +1,10 @@
 // NAVBAR FUNCTION
 
+
+// This is to unhide menu
 const ham = document.querySelector('.navbarToggle');
 const menu = document.querySelector('.navList')
 
-// This is to unhide menu
 ham.addEventListener('click', toggleMenu);
 function toggleMenu() {
     if (menu.classList.contains("showMenu")) {
@@ -23,7 +24,7 @@ menuLinks.forEach (
     }
 )
 
-// --------- FUNCTION FOR CHANGING MODAL PICS ---------
+// --------- FUNCTIONS FOR CHANGING MODAL PICS ---------
 const imgOne = document.getElementById("imageOne");
 const imgTwo = document.getElementById("imageTwo");
 const imgThree = document.getElementById("imageThree");
@@ -109,6 +110,29 @@ function changeImageThreeLeft() {
     imgThree.src="./assets/projects/surviving1.png"
     imgThree.alt="A preview of the Surviving Bootcamp app displayed on a Macbook Pro 16 inch display"
   }
+}
+
+
+// THIS FUNCTION IS FOR SCROLL TO TOP BUTTON
+
+//Get the button:
+scrollToTop = document.getElementById("scrollToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTop.style.display = "block";
+  } else {
+    scrollToTop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 // THIS IS JUST FOR FUN
