@@ -800,8 +800,8 @@ button {
   position: fixed;
   top: -1.3rem;
   right: 9.5rem;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-115%);
+          transform: translateY(-115%);
   -webkit-transition: -webkit-transform 0.1s;
   transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
