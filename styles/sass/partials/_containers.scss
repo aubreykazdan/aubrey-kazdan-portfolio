@@ -1,6 +1,7 @@
 body {
   width: 100vw;
-  background-image: url(../../../assets/background.jpg)
+  background-image: url(../../../assets/background.jpg);
+  overflow-x: hidden;
 }
 
 h2 {
@@ -149,7 +150,7 @@ button {
   }
 }
 
-figcaption {
+figcaption{
   height: 97.6%;
   width: 100%;
   display: flex;
@@ -161,8 +162,6 @@ figcaption {
   opacity: 0;
   p {
     position: relative;
-    @include fontStyles(4rem, 0.7rem, $black);
-    font-weight: 700;
   }
 }
 

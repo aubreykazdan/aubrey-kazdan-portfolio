@@ -53,6 +53,11 @@ a:hover {
     color: $white;
 }
 
+figcaption p {
+  @include fontStyles(4rem, 0.7rem, $black);
+  font-weight: 700;
+}
+
 .hireMe h3 {
   @include fontStyles(4rem, 4.5rem, white);
 }
