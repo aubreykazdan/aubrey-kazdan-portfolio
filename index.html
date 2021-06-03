@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/1df462a23f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <link type="image/png" href="./assets/vinyl.png" rel="icon">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Aubrey Kazdan</title>
 </head>
@@ -93,6 +94,10 @@
               <i class="fab fa-js"></i>
               <h3>JavaScript</h3>
             </li>
+            <li>
+              <i class="devicon-jquery-plain"></i>
+              <h3>jQuery</h3>
+            </li>
           </ul>
         </div>
   
@@ -131,6 +136,10 @@
               <i class="fas devicon-firebase-plain"></i>
               <h3>Firebase</h3>
             </li>
+            <li>
+              <i class="devicon-figma-plain"></i>
+              <h3>Figma</h3>
+            </li>
           </ul>
         </div>
         
@@ -154,7 +163,7 @@
 
           <div class="projectText">
             <h3>Movies A-to-Z</h3>
-            <p>HTML5 | CSS3 | JavaScript | Sass</p>
+            <p>HTML5 | CSS3 | JavaScript | Sass | RESTful API</p>
             <p>A game where users can compare movies based on IMDb user rating scores. Built in one week in collaboration with <a href="https://github.com/zachbines">Zach Bines</a>.</p>
             <div class="projectLinks">
               <a href="https://zap-2.github.io/Movies-A-to-Z/">Live</a>
@@ -176,7 +185,7 @@
 
           <div class="projectText">
             <h3>Podcast Prioritizer</h3>
-            <p>HTML5 | CSS3 | JavaScript | React</p>
+            <p>HTML5 | CSS3 | JavaScript | React | RESTful API</p>
             <p>This app suggests podcasts based on commute times and user search queries. Built in one week in collaboration with 
               <a href="https://github.com/clembrulee">Clement Sung</a>, 
               <a href="https://github.com/PaulSzadurski">Paul Szadurski</a>, and
@@ -224,7 +233,7 @@
 
           <div class="projectText">
             <h3>Next Project Coming Soon...</h3>
-            <p>Want to work on a project together? Interested in code? Or perhaps you want to offer me a job? Refer to the contact form below so that we can get to know one another!</p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -275,32 +284,42 @@
 
 
     <section class="contact" id="contact">
-      <h2 class="contactHeader">Contact</h2>
-      <div class="contactContainer wrapper">
-
-
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqldoqw" method="post">
-          <fieldset id="fs-frm-inputs">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="Nicolas Cage" required="">
-            <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@email.com" required="">
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="Wow this is a nice textbox, ain't it?" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          </fieldset>
-          <input class="submit" type="submit" value="Submit">
-        </form>
-
-
+      <div class="contactHeading wrapper">
+        <h2>Contact</h2>
+        <p>Want to work on a project together? Interested in code? Or perhaps you want to offer me a job? Refer to the links & contact form below so that we can get to know one another!</p>
+      </div>
+      
+      <div class="contactContainer">
+        <div class="hireMe">
+          <h3>Want me on your team?</h3>
+          <a href="https://calendly.com/aubreykazdan"><i class="fas fa-calendar"></i> Book a meeting</a>
+          <a href="./assets/AubreyKResume.pdf"><i class="fas fa-file"></i> Preview my résumé</a>
+        </div>
+        
+        <div class="formContainer">
+          <h3>Let's Chat</h3>
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqldoqw" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="Nicolas Cage" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@email.com" required="">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="Wow this is a nice textbox, ain't it?" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input class="submitForm" type="submit" value="Submit">
+          </form>
+        </div>
       </div>
 
-      <!-- <div class="calendar">
-        <p><i class="far fa-calendar"></i></p>
-      </div> -->
     </section>
-
   </main>
+
+  <footer>
+    <p>© Aubrey Kazdan 2020 | All Rights Reserved</p>
+    <p>If you made it this far, thank you for being alive.</p>
+  </footer>
 <script src="./script.js"></script>
 </body>
 </html>
