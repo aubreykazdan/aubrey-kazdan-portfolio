@@ -340,6 +340,10 @@ figcaption p {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   background-image: url(../../../assets/background.jpg);
@@ -367,7 +371,7 @@ ul {
 }
 
 button {
-  border: 1px solid #f7f7f7;
+  border: 2px solid #f7f7f7;
 }
 
 .wrapper {
@@ -614,7 +618,7 @@ a:hover figcaption {
 
 .close {
   margin: 3rem;
-  border: 1px solid #f7f7f7;
+  border: 2px solid #f7f7f7;
 }
 
 .modalButtonContainer .fas {
@@ -710,6 +714,7 @@ form textarea {
 .submitForm {
   background-color: #2C2C2C;
   color: #f7f7f7;
+  border: 2px solid #f7f7f7;
   cursor: pointer;
   margin: 0 30%;
 }
@@ -793,8 +798,8 @@ button {
 .navList {
   border: 1px solid #f7f7f7;
   position: fixed;
-  top: -25px;
-  right: 85px;
+  top: -1.3rem;
+  right: 9.5rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.1s;
@@ -826,8 +831,8 @@ button {
 
 .navbarToggle {
   position: fixed;
-  top: 0.9rem;
-  right: 1.5rem;
+  top: 2rem;
+  right: 3rem;
   background-image: none;
   background: transparent;
   border: none;
@@ -839,7 +844,7 @@ button {
   color: #f7f7f7;
   background: #2C2C2C;
   padding: 1rem;
-  border: 1px solid #f7f7f7;
+  border: 2px solid #f7f7f7;
 }
 
 .navbarToggle .fas:focus,
@@ -851,6 +856,28 @@ button {
 .showMenu {
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
+}
+
+.scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #2C2C2C;
+  color: #f7f7f7;
+  cursor: pointer;
+  padding: 1rem;
+  border: 2px solid #f7f7f7;
+  font-size: 3rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.scrollToTop:hover {
+  background-color: #888888;
 }
 
 @media (max-width: 915px) {
@@ -883,20 +910,20 @@ button {
   }
 }
 @media (max-width: 400px) {
-  .navbarToggle {
-    right: 0.3rem;
-  }
-
   .navList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 0;
-    right: 0.3rem;
+    top: 1.5rem;
+    right: 1.3rem;
     width: 30%;
-    -webkit-transform: translateY(-110%);
-            transform: translateY(-110%);
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+  }
+
+  .navbarToggle {
+    right: 1rem;
   }
 
   .showMenu {
@@ -949,5 +976,12 @@ button {
     line-height: 0.7rem;
     color: #2C2C2C;
     font-weight: 700;
+  }
+
+  .scrollToTop {
+    bottom: 1.5rem;
+    right: 1.3rem;
+    padding: 0.4rem;
+    font-size: 2.5rem;
   }
 }
