@@ -304,6 +304,13 @@ a:hover {
   color: #f7f7f7;
 }
 
+figcaption p {
+  font-size: 4rem;
+  line-height: 0.7rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
 .hireMe h3 {
   font-size: 4rem;
   line-height: 4.5rem;
@@ -319,6 +326,7 @@ a:hover {
 body {
   width: 100vw;
   background-image: url(../../../assets/background.jpg);
+  overflow-x: hidden;
 }
 
 h2 {
@@ -498,10 +506,6 @@ figcaption {
 }
 figcaption p {
   position: relative;
-  font-size: 4rem;
-  line-height: 0.7rem;
-  color: #2C2C2C;
-  font-weight: 700;
 }
 
 figcaption:hover,
