@@ -306,13 +306,13 @@ a:hover {
 
 .hireMe h3 {
   font-size: 4rem;
-  line-height: 0.7rem;
+  line-height: 4.5rem;
   color: white;
 }
 
 .formContainer h3 {
   font-size: 4rem;
-  line-height: 0.7rem;
+  line-height: 4.5rem;
   color: white;
 }
 
@@ -625,6 +625,9 @@ a:hover figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.hireMe h3 {
+  text-align: center;
 }
 .hireMe a {
   color: #f7f7f7;
