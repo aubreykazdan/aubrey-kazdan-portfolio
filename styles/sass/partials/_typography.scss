@@ -53,13 +53,30 @@ a:hover {
     color: $white;
 }
 
+.socialIcons i {
+  font-size: 2.5rem;
+}
+
+.skillsFlexContainer i {
+  font-size: 7rem;
+}
+
 figcaption p {
   @include fontStyles(4rem, 0.7rem, $black);
   font-weight: 700;
 }
 
+.close,
+.modalButtonContainer button {
+  font-size: 4rem;
+}
+
 .hireMe h3 {
   @include fontStyles(4rem, 4.5rem, white);
+}
+
+.hireMe i {
+  font-size: 3rem;
 }
 
 .formContainer h3 {
