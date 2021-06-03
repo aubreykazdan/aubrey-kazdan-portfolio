@@ -110,3 +110,10 @@ function changeImageThreeLeft() {
     imgThree.alt="A preview of the Surviving Bootcamp app displayed on a Macbook Pro 16 inch display"
   }
 }
+
+// THIS IS JUST FOR FUN
+console.log("%cOh hey there :)","color: skyblue; font-family:sans-serif; font-size: 20px");
+
+console.log("%cDid I mention that I'm looking for work?","color: pink; font-family:sans-serif; font-size: 17px");
+
+console.log("%cCause if I didn't mention it already, I AM looking for work. Please hire me 🤓","color: orange; font-family:sans-serif; font-size: 12px");

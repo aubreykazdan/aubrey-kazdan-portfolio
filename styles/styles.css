@@ -304,6 +304,14 @@ a:hover {
   color: #f7f7f7;
 }
 
+.socialIcons i {
+  font-size: 2.5rem;
+}
+
+.skillsFlexContainer i {
+  font-size: 7rem;
+}
+
 figcaption p {
   font-size: 4rem;
   line-height: 0.7rem;
@@ -311,10 +319,19 @@ figcaption p {
   font-weight: 700;
 }
 
+.close,
+.modalButtonContainer button {
+  font-size: 4rem;
+}
+
 .hireMe h3 {
   font-size: 4rem;
   line-height: 4.5rem;
   color: white;
+}
+
+.hireMe i {
+  font-size: 3rem;
 }
 
 .formContainer h3 {
@@ -412,10 +429,6 @@ button {
   margin-right: 5rem;
 }
 
-.socialIcons i {
-  font-size: 2.5rem;
-}
-
 .skills {
   background-color: #888888;
   margin: 0;
@@ -438,7 +451,6 @@ button {
       justify-content: space-around;
 }
 .skillsFlexContainer i {
-  font-size: 7rem;
   height: 100px;
   width: 100px;
   padding: 2rem 0;
@@ -485,7 +497,7 @@ button {
 }
 
 figcaption {
-  height: 97.6%;
+  height: 98%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,6 +515,7 @@ figcaption {
   position: absolute;
   bottom: 0;
   opacity: 0;
+  border: 5px solid #2C2C2C;
 }
 figcaption p {
   position: relative;
@@ -517,17 +530,17 @@ figcaption:active {
 
 a:hover figcaption {
   opacity: 0.9;
-  background-color: #888888;
+  background-color: #f7f7f7;
   color: #f7f7f7;
-  -webkit-transition: all 1.2s;
-  transition: all 1.2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .projectText {
   margin: 1rem 1rem 2rem 1rem;
 }
 .projectText .projectLinks a {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .modalDialog {
@@ -595,7 +608,6 @@ a:hover figcaption {
   margin: 2rem;
   padding: 2rem;
   line-height: 2rem;
-  font-size: 4rem;
   -webkit-transition: all 1.3s ease-in-out;
   transition: all 1.3s ease-in-out;
 }
@@ -617,7 +629,7 @@ a:hover figcaption {
 }
 
 .contact {
-  padding: 10rem 0;
+  padding: 10rem 0 5rem 0;
   background-color: #888888;
 }
 
@@ -649,9 +661,6 @@ a:hover figcaption {
   color: #f7f7f7;
   margin: 1rem 0;
 }
-.hireMe a i {
-  font-size: 3rem;
-}
 
 .hireMe a:focus,
 .hireMe a:hover,
@@ -661,7 +670,7 @@ a:hover figcaption {
 
 .formContainer h3 {
   text-align: center;
-  margin: 10rem 0 0 0;
+  margin: 10rem 0 4rem 0;
 }
 
 form {
@@ -718,6 +727,7 @@ form textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 6rem;
 }
 
 footer {
@@ -912,6 +922,7 @@ button {
   }
   .skills .skillsFlexContainer li {
     margin: 0;
+    padding: 0.6rem;
   }
   .skills .skillsFlexContainer i {
     font-size: 5rem;
@@ -928,6 +939,9 @@ button {
 
   .proImages {
     display: block;
+  }
+  .proImages div {
+    margin-bottom: 10rem;
   }
 
   figcaption p {
