@@ -53,3 +53,10 @@ a:hover {
     color: $white;
 }
 
+.hireMe h3 {
+  @include fontStyles(4rem, 0.7rem, white);
+}
+
+.formContainer h3 {
+  @include fontStyles(4rem, 0.7rem, white);
+}
