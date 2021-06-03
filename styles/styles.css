@@ -838,7 +838,7 @@ button {
   color: #888888;
 }
 
-.showMenuDesktop {
+.showMenu {
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
 }
@@ -884,13 +884,13 @@ button {
             flex-direction: column;
     top: 0;
     right: 0;
-    left: 250px;
+    left: 240px;
     width: 30%;
     -webkit-transform: translateY(-110%);
             transform: translateY(-110%);
   }
 
-  .showMenuDesktop {
+  .showMenu {
     -webkit-transform: translateY(45px);
             transform: translateY(45px);
   }
