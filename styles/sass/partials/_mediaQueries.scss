@@ -30,14 +30,13 @@
 
 @media (max-width: 400px) {
   .navbarToggle {
-    right: 0.5rem;
+    right: 0.3rem;
   }
   
   .navList {
     flex-direction: column;
     top: 0;
-    right: 0;
-    left: 243px;
+    right: 0.3rem;
     width: 30%;
     transform: translateY(-110%);
   }
