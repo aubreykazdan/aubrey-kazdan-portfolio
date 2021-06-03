@@ -923,7 +923,7 @@ button {
   }
 
   .navbarToggle {
-    right: 0.2rem;
+    right: 0;
   }
 
   .showMenu {
@@ -979,8 +979,8 @@ button {
   }
 
   .scrollToTop {
-    bottom: 1.8rem;
-    right: 1.3rem;
+    bottom: 2rem;
+    right: 1.6rem;
     padding: 0.4rem;
     font-size: 2.5rem;
   }
