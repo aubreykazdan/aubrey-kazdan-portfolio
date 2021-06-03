@@ -7,6 +7,12 @@ h2 {
   margin: 0;
 }
 
+h1:hover,
+h2:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
+}
+
 .hide {
   display: none;
 }
@@ -94,10 +100,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  .fab,
-  .fas,
-  .devicon-jquery-plain,
-  .devicon-figma-plain {
+  i {
     font-size: 7rem;
     height: 100px;
     width: 100px;
@@ -106,10 +109,18 @@ button {
   }
   li {
     margin: 1rem;
+    padding: 1rem;
     text-align: center;
   }
   h3 {
     margin: 0;
+  }
+}
+
+.skillsFlexContainer {
+  li:hover {
+    box-shadow: 1rem 1rem 2rem $black;
+    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -125,7 +136,7 @@ button {
 .proImages {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 0 1rem;
+  gap: 8rem 0;
 }
 
 .imagesGallery {
@@ -150,7 +161,7 @@ figcaption {
   opacity: 0;
   p {
     position: relative;
-    @include fontStyles(4rem, 0.7rem, white);
+    @include fontStyles(4rem, 0.7rem, $black);
     font-weight: 700;
   }
 }
@@ -160,13 +171,11 @@ figcaption:focus,
 figcaption:active {
   opacity: 1;
   top: 0;
-  // color: white;
 }
 
 a:hover figcaption {
   opacity: 0.9;
   background-color: $grey;
-  // top: 0;
   color: $white;
   transition: all 1.2s;
 }
@@ -245,7 +254,6 @@ a:hover figcaption {
   transform: rotate(360deg);
 }
 
-
 // --------- STYLINGS FOR CONTACT ---------
 
 .contact {
@@ -271,6 +279,10 @@ a:hover figcaption {
   }
   a{
     color: $white;
+    margin: 1rem 0;
+    i {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -321,6 +333,11 @@ form {
 .submitForm:hover,
 .submitForm:active {
   color: $grey;
+}
+
+.movieContainer {
+  display: flex;
+  justify-content: center;
 }
 
 // --------- STYLINGS FOR FOOTER ---------
