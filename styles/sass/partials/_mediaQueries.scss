@@ -82,7 +82,7 @@
   }
 
   figcaption p {
-      @include fontStyles(2rem, 0.7rem, white);
+      @include fontStyles(2rem, 0.7rem, $black);
       font-weight: 700;
   }
 }
