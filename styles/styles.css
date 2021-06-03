@@ -631,6 +631,10 @@ a:hover figcaption {
 }
 .hireMe a {
   color: #f7f7f7;
+  margin: 1rem 0;
+}
+.hireMe a i {
+  font-size: 3rem;
 }
 
 .hireMe a:focus,

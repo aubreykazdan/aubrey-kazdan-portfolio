@@ -245,7 +245,6 @@ a:hover figcaption {
   transform: rotate(360deg);
 }
 
-
 // --------- STYLINGS FOR CONTACT ---------
 
 .contact {
@@ -271,6 +270,10 @@ a:hover figcaption {
   }
   a{
     color: $white;
+    margin: 1rem 0;
+    i {
+      font-size: 3rem;
+    }
   }
 }
 
