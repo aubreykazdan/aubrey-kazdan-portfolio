@@ -287,10 +287,6 @@ h3 {
   font-weight: 400;
 }
 
-.bio span {
-  color: #888888;
-}
-
 li {
   list-style: none;
 }
@@ -404,8 +400,7 @@ button {
   display: flex;
 }
 .homeContent .homePadding {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 0;
   padding: 4rem;
 }
 .homeContent .homePadding .intro {
@@ -440,7 +435,7 @@ button {
   padding: 10rem 0;
 }
 .skills h2 {
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 
 .skillsFlexContainer {
@@ -453,11 +448,12 @@ button {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  max-width: 900px;
 }
 .skillsFlexContainer i {
-  height: 100px;
-  width: 100px;
-  padding: 2rem 0;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
   display: inline-block;
 }
 .skillsFlexContainer li {
@@ -488,6 +484,14 @@ button {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 8rem 0;
+}
+.proImages .movieProject,
+.proImages .survivingProject {
+  padding: 0 1rem;
+}
+.proImages .podcastProject,
+.proImages .comingSoonProject {
+  padding: 0 1rem;
 }
 
 .imagesGallery {
@@ -872,12 +876,10 @@ button {
   padding: 1rem;
   border: 2px solid #f7f7f7;
   font-size: 3rem;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 .scrollToTop:hover {
-  background-color: #888888;
+  color: #888888;
 }
 
 @media (max-width: 915px) {
