@@ -974,10 +974,8 @@ button {
   .skills h2 {
     padding-bottom: 2rem;
   }
-  .skills .skillsFlexContainer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .skills .skillsFlexContainer h3 {
+    font-size: 1.5rem;
   }
   .skills .skillsFlexContainer li {
     margin: 0;

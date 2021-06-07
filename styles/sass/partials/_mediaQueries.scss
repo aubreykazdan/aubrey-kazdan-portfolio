@@ -63,15 +63,15 @@
     h2 {
       padding-bottom: 2rem;
     }
-    .skillsFlexContainer {
-      justify-content: center;
-      li {
-        margin: 0;
-        padding: 0.6rem;
-      }
-      i {
-        font-size: 5rem;
-      }
+    .skillsFlexContainer h3 {
+      font-size: 1.5rem;
+    }
+    .skillsFlexContainer li {
+      margin: 0;
+      padding: 0.6rem;
+    }
+    .skillsFlexContainer i {
+      font-size: 5rem;
     }
   }
 
