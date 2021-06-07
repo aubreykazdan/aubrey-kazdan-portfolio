@@ -25,10 +25,18 @@
     grid-template-columns: 100%;
     grid-template-rows: 100%;
   }
+
+  .contactHeading p {
+    padding: 0 2rem;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
-  
+
   .navList {
     flex-direction: column;
     top: 1.5rem;
@@ -38,7 +46,8 @@
   }
   
   .navbarToggle {
-    right: 0;
+    top: 1rem;
+    right: 1rem;
   }
 
   .showMenu {
@@ -87,9 +96,9 @@
   }
 
   .scrollToTop {
-    bottom: 2rem;
+    bottom: 3rem;
     right: 1.6rem;
-    padding: 0.4rem;
+    padding: 0.7rem;
     font-size: 2.5rem;
   }
 }
