@@ -272,10 +272,17 @@ a:hover figcaption {
 
 .contactHeading p {
   color: $white;
-  text-align: center;
+  text-align: left;
+  padding: 0 20rem;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .hireMe {
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,16 +295,19 @@ a:hover figcaption {
   }
 }
 
-
 .hireMe a:focus,
 .hireMe a:hover,
 .hireMe a:active {
   color: $black;
 }
 
+.formContainer {
+  flex-basis: 50%;
+}
+
 .formContainer h3 {
   text-align: center;
-  margin: 10rem 0 4rem 0;
+  justify-self: flex-end;
 }
 
 form {
@@ -347,4 +357,5 @@ form {
 // --------- STYLINGS FOR FOOTER ---------
 footer {
   text-align: center;
+  margin-bottom: 8rem;
 }

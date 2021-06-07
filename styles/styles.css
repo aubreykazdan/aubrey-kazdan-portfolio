@@ -647,10 +647,22 @@ a:hover figcaption {
 
 .contactHeading p {
   color: #f7f7f7;
-  text-align: center;
+  text-align: left;
+  padding: 0 20rem;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hireMe {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,9 +688,14 @@ a:hover figcaption {
   color: #2C2C2C;
 }
 
+.formContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 .formContainer h3 {
   text-align: center;
-  margin: 10rem 0 4rem 0;
+  justify-self: flex-end;
 }
 
 form {
@@ -741,6 +758,7 @@ form textarea {
 
 footer {
   text-align: center;
+  margin-bottom: 8rem;
 }
 
 .fadeIn {
@@ -910,6 +928,17 @@ button {
     grid-template-columns: 100%;
     grid-template-rows: 100%;
   }
+
+  .contactHeading p {
+    padding: 0 2rem;
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media (max-width: 500px) {
   .navList {
@@ -925,7 +954,8 @@ button {
   }
 
   .navbarToggle {
-    right: 0;
+    top: 1rem;
+    right: 1rem;
   }
 
   .showMenu {
@@ -981,9 +1011,9 @@ button {
   }
 
   .scrollToTop {
-    bottom: 2rem;
+    bottom: 3rem;
     right: 1.6rem;
-    padding: 0.4rem;
+    padding: 0.7rem;
     font-size: 2.5rem;
   }
 }
