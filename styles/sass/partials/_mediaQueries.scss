@@ -20,7 +20,6 @@
     height: auto;
   }
 
-  // --------- STYLINGS FOR PROJECTS ---------
   .proImages {
     grid-template-columns: 100%;
     grid-template-rows: 100%;
@@ -36,6 +35,11 @@
 }
 
 @media (max-width: 500px) {
+
+  .logoContainer {
+    top: 1rem;
+    left: 1.3rem;
+  }
 
   .navList {
     flex-direction: column;

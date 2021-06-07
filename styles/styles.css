@@ -376,6 +376,20 @@ button {
   margin: 0 auto;
 }
 
+.logoContainer {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  border: 1px solid #f7f7f7;
+  height: 5rem;
+  width: 5rem;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
 .homeDivider {
   width: 100vw;
   height: 100vh;
@@ -941,6 +955,11 @@ button {
   }
 }
 @media (max-width: 500px) {
+  .logoContainer {
+    top: 1rem;
+    left: 1.3rem;
+  }
+
   .navList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
