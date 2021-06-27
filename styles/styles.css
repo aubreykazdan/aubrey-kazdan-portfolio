@@ -401,7 +401,7 @@ button {
 .homeImage {
   width: 50%;
   height: 100%;
-  background-image: url(../../../assets/portraitBig.jpg);
+  background-image: url(../../../assets/portraitBig2.png);
   background-position: center;
   background-size: cover;
 }
@@ -924,7 +924,7 @@ button {
   .homeImage {
     width: 100%;
     height: 60vh;
-    background-image: url(../../../assets/portraitmobilegrey.jpg);
+    background-image: url(../../../assets/portraitMobile.png);
   }
 
   .homePadding {
